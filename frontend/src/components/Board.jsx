@@ -11,7 +11,7 @@ const Board = ({ words, selectedWords, guessedWords, correctGuesses, wrongWords,
           isSelected={selectedWords.includes(word)}
           isGuessed={guessedWords ? guessedWords.includes(word) : false}
           isCorrect={correctGuesses ? correctGuesses.includes(word) : false}
-          isWrong={wrongWords ? wrongWords.includes(word) : false}
+          isWrongCount={wrongWords ? wrongWords.filter(w => w === word).length : 0}
           onClick={() => onCardClick(word)}
         />
       ))}

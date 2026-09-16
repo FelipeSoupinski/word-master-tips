@@ -49,20 +49,23 @@
   transform: none;
 }
 
-.card.wrong {
-  background-color: #dc2626;
-  border-color: #ef4444;
-  box-shadow: 0 0 10px #ef4444, inset 0 0 5px #ef4444;
-  pointer-events: none;
-  cursor: default;
+@keyframes errorBlink {
+  0% { border-color: #ef4444; box-shadow: 0 0 20px #ef4444, inset 0 0 10px #ef4444; background-color: #451a1a; }
+  50% { border-color: var(--neon-cyan); box-shadow: 0 0 5px var(--neon-cyan), inset 0 0 5px var(--neon-cyan); background-color: #1a1a24; }
+  100% { border-color: #ef4444; box-shadow: 0 0 20px #ef4444, inset 0 0 10px #ef4444; background-color: #451a1a; }
 }
 
-.card.wrong .card-text {
+.card.wrong-blink {
+  animation: errorBlink 0.3s ease-in-out 3;
+  pointer-events: none;
+}
+
+.card.wrong-blink .card-text {
   color: #fff;
   text-shadow: 0 0 5px #ef4444;
 }
 
-.card.wrong:hover {
+.card.wrong-blink:hover {
   transform: none;
 }
 

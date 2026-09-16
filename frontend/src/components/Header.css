@@ -16,15 +16,3 @@
   animation: flicker 4s infinite alternate;
 }
 
-@keyframes flicker {
-  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
-    text-shadow:
-      0 0 4px #fff,
-      0 0 10px var(--neon-pink),
-      0 0 20px var(--neon-pink),
-      0 0 40px var(--neon-pink);
-  }
-  20%, 24%, 55% {
-    text-shadow: none;
-  }
-}

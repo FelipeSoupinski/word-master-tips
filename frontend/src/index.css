@@ -8,6 +8,8 @@
   --text-main: #ffffff;
   --font-arcade: 'Press Start 2P', cursive;
   --font-body: 'Roboto', sans-serif;
+  --card-bg: rgba(8, 15, 20, 0.85);
+  --border-color: rgba(0, 255, 255, 0.3);
 }
 
 body {
@@ -20,4 +22,45 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+}
+
+/* Global Back Button */
+.back-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-family: var(--font-arcade);
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  background-color: rgba(10, 10, 15, 0.8);
+  color: var(--neon-cyan);
+  border: 2px solid var(--neon-cyan);
+  border-radius: 8px;
+  cursor: pointer;
+  z-index: 1000;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.back-btn:hover {
+  background-color: var(--neon-cyan);
+  color: var(--bg-dark);
+  box-shadow: 0 0 20px var(--neon-cyan);
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px var(--neon-pink),
+      0 0 20px var(--neon-pink),
+      0 0 40px var(--neon-pink);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
 }

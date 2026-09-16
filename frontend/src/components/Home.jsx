@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
+import { getAllProgress } from '../services/progressStorage';
 import './Home.css';
 
 export default function Home() {
   const { campaignId } = useParams();
   const navigate = useNavigate();
+  const [progress, setProgress] = useState({});
+
+  useEffect(() => {
+    setProgress(getAllProgress());
+  }, []);
 
   if (campaignId !== undefined) {
     const parsedCampaignId = parseInt(campaignId, 10);
@@ -16,18 +24,30 @@ export default function Home() {
         <div className="home-content levels-content">
           <h1 className="home-title">Selecione uma Fase</h1>
           <div className="levels-grid">
-            {levels.map(level => (
-              <button 
-                key={level.id} 
-                className="level-btn" 
-                onClick={() => navigate(`/campaign/${parsedCampaignId}/level/${level.id}/play`)}
-              >
-                {level.name}
-              </button>
-            ))}
+            {levels.map(level => {
+              const uniqueLevelId = `${parsedCampaignId}-${level.id}`;
+              const stars = progress[uniqueLevelId] || 0;
+              
+              return (
+                <button 
+                  key={level.id} 
+                  className="level-btn" 
+                  onClick={() => navigate(`/campaign/${parsedCampaignId}/level/${level.id}/play`)}
+                >
+                  <div className="level-name">{level.name}</div>
+                  {stars > 0 && (
+                    <div className="level-stars">
+                      {Array.from({ length: stars }).map((_, i) => (
+                        <FontAwesomeIcon key={i} icon={faStar} style={{ color: '#FFD700', marginLeft: '2px' }} />
+                      ))}
+                    </div>
+                  )}
+                </button>
+              );
+            })}
           </div>
           <button className="back-btn" onClick={() => navigate('/')}>
-            Voltar
+            <FontAwesomeIcon icon={faArrowLeft} /> Voltar
           </button>
         </div>
       </div>

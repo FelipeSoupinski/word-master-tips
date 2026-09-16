@@ -9,7 +9,7 @@ import Toast from './Toast';
 import IntroBanner from './IntroBanner';
 import GameLog from './GameLog';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
 
 export default function GameView() {
@@ -86,7 +86,7 @@ export default function GameView() {
   };
 
   const handleCardClick = (word) => {
-    if (showIntro || gameState !== 'guesser_turn' || guessedWords.includes(word) || correctGuesses.includes(word) || wrongGuesses.includes(word)) return;
+    if (showIntro || gameState !== 'guesser_turn' || guessedWords.includes(word) || correctGuesses.includes(word)) return;
     setSelectedWord(word === selectedWord ? null : word);
   };
 
@@ -136,7 +136,9 @@ export default function GameView() {
         <Header />
         <div className="error-message">
           <p>{error}</p>
-          <button onClick={() => navigate('/')}>Voltar para a Home</button>
+          <button className="back-btn" onClick={() => navigate('/')}>
+            <FontAwesomeIcon icon={faArrowLeft} /> Voltar para a Home
+          </button>
         </div>
       </div>
     );
@@ -146,6 +148,10 @@ export default function GameView() {
     <div className='app-container'>
       <Header />
       
+      <button className="back-btn" onClick={() => navigate(`/campaign/${campaignId}`)}>
+        <FontAwesomeIcon icon={faArrowLeft} /> Voltar
+      </button>
+
       {showIntro && <IntroBanner />}
       
       {feedbackMessage && <Toast message={feedbackMessage.text} type={feedbackMessage.type} />}
@@ -153,7 +159,10 @@ export default function GameView() {
       {gameState === 'finished' && !showIntro && (
         <GameOver 
           result={result}
-          onPlayAgain={handlePlayAgain} 
+          onPlayAgain={handlePlayAgain}
+          lives={lives}
+          campaignId={campaignId}
+          levelId={levelId}
         />
       )}
 

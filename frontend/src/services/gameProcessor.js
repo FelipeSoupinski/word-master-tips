@@ -1,5 +1,6 @@
 import defaultGames from '../games/default-games.json';
 import themedGames from '../games/themed-games.json';
+import { saveLevelProgress } from './progressStorage';
 
 // In-memory static database
 const ALL_GAMES = [defaultGames, themedGames];
@@ -45,6 +46,8 @@ class GameProcessor {
     }
 
     this.matchState = {
+      gameId: gameId,
+      levelId: levelId,
       state: 'master_turn',
       words: shuffledWords,
       hints: level.hints, // Precomputed hints
@@ -70,7 +73,7 @@ class GameProcessor {
       const nextHint = this.matchState.hints.shift();
       
       // Filter out targets that are already guessed/removed
-      const remainingBoardWords = this.matchState.words.filter(w => !this.matchState.guessedWords.includes(w) && !this.matchState.wrongGuesses.includes(w));
+      const remainingBoardWords = this.matchState.words.filter(w => !this.matchState.guessedWords.includes(w));
       const validTargets = nextHint.targets.filter(w => remainingBoardWords.includes(w));
       
       if (validTargets.length > 0) {
@@ -91,7 +94,7 @@ class GameProcessor {
 
   guessWord(word) {
     if (this.matchState.state !== 'guesser_turn') return this.getState();
-    if (this.matchState.guessedWords.includes(word) || this.matchState.wrongGuesses.includes(word)) return this.getState();
+    if (this.matchState.guessedWords.includes(word)) return this.getState();
 
     let correct = false;
 
@@ -106,6 +109,12 @@ class GameProcessor {
       if (this.matchState.correctGuesses.length === this.matchState.words.length) {
         this.matchState.state = 'finished';
         this.matchState.result = 'victory';
+        
+        // Salva progresso
+        // Podemos usar 'gameId-levelId' ou se levelId já for único (ex: default-fase1), usamos ele.
+        // As fases nos jsons têm id como 'fase1', então combinamos com o gameId para evitar colisões
+        const uniqueLevelId = `${this.matchState.gameId}-${this.matchState.levelId}`;
+        saveLevelProgress(uniqueLevelId, this.matchState.lives);
       } else if (this.matchState.currentTargets <= 0) {
         // Hint completed, master's turn
         this.matchState.state = 'master_turn';
