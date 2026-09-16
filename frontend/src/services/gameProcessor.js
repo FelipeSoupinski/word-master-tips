@@ -58,6 +58,7 @@ class GameProcessor {
       currentHint: null,
       currentTargets: 0,
       targetWords: [],
+      consecutiveCorrectGuesses: 0,
       result: null
     };
 
@@ -97,6 +98,7 @@ class GameProcessor {
     if (this.matchState.guessedWords.includes(word)) return this.getState();
 
     let correct = false;
+    let recoveredLife = false;
 
     if (this.matchState.targetWords.includes(word)) {
       // Correct guess
@@ -104,6 +106,14 @@ class GameProcessor {
       this.matchState.guessedWords.push(word);
       this.matchState.correctGuesses.push(word);
       this.matchState.currentTargets--;
+      this.matchState.consecutiveCorrectGuesses++;
+
+      // Life recovery mechanic
+      if (this.matchState.consecutiveCorrectGuesses >= 5 && this.matchState.lives < 3) {
+        this.matchState.lives++;
+        this.matchState.consecutiveCorrectGuesses = 0;
+        recoveredLife = true;
+      }
 
       // Check win condition
       if (this.matchState.correctGuesses.length === this.matchState.words.length) {
@@ -111,8 +121,6 @@ class GameProcessor {
         this.matchState.result = 'victory';
         
         // Salva progresso
-        // Podemos usar 'gameId-levelId' ou se levelId já for único (ex: default-fase1), usamos ele.
-        // As fases nos jsons têm id como 'fase1', então combinamos com o gameId para evitar colisões
         const uniqueLevelId = `${this.matchState.gameId}-${this.matchState.levelId}`;
         saveLevelProgress(uniqueLevelId, this.matchState.lives);
       } else if (this.matchState.currentTargets <= 0) {
@@ -123,6 +131,7 @@ class GameProcessor {
     } else {
       // Wrong guess
       correct = false;
+      this.matchState.consecutiveCorrectGuesses = 0;
       this.matchState.lives--;
       this.matchState.wrongGuesses.push(word);
 
@@ -134,6 +143,7 @@ class GameProcessor {
 
     return {
       correct,
+      recoveredLife,
       ...this.getState()
     };
   }
@@ -149,6 +159,7 @@ class GameProcessor {
       currentTargets: this.matchState.currentTargets,
       targetWords: this.matchState.targetWords,
       lives: this.matchState.lives,
+      consecutiveCorrectGuesses: this.matchState.consecutiveCorrectGuesses,
       result: this.matchState.result
     };
   }

@@ -9,8 +9,9 @@ import Toast from './Toast';
 import IntroBanner from './IntroBanner';
 import GameLog from './GameLog';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faArrowLeft, faStar, faBolt } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
+import { getAllProgress } from '../services/progressStorage';
 
 export default function GameView() {
   const { campaignId, levelId } = useParams();
@@ -22,6 +23,8 @@ export default function GameView() {
   const [currentHint, setCurrentHint] = useState(null);
   const [currentTargets, setCurrentTargets] = useState(0);
   const [error, setError] = useState(null);
+  const [bestScore, setBestScore] = useState(0);
+  const [consecutiveCorrectGuesses, setConsecutiveCorrectGuesses] = useState(0);
   
   const [lives, setLives] = useState(3);
   const [result, setResult] = useState(null);
@@ -48,6 +51,10 @@ export default function GameView() {
       const state = processor.startGame(parseInt(campaignId), parseInt(levelId));
       updateState(state);
       
+      const allProgress = getAllProgress();
+      const uniqueLevelId = `${campaignId}-${levelId}`;
+      setBestScore(allProgress[uniqueLevelId] || 0);
+
       // Stop intro animation after 1.8 seconds
       const timer = setTimeout(() => {
         setShowIntro(false);
@@ -72,6 +79,7 @@ export default function GameView() {
     setCorrectGuesses(state.correctGuesses || []);
     setWrongGuesses(state.wrongGuesses || []);
     setLives(state.lives ?? 3);
+    setConsecutiveCorrectGuesses(state.consecutiveCorrectGuesses || 0);
     setResult(state.result || null);
     setSelectedWord(null);
 
@@ -96,11 +104,18 @@ export default function GameView() {
     
     try {
       const response = processor.guessWord(guessedWord);
-      const { correct, lives: newLives } = response;
+      const { correct, recoveredLife, lives: newLives } = response;
 
       if (correct) {
-        setFeedbackMessage({ type: 'correct', text: 'Acertou! ✓' });
+        if (recoveredLife) {
+          setFeedbackMessage({ type: 'correct', text: '5 acertos, vida Recuperada! ❤️' });
+        } else {
+          setFeedbackMessage({ type: 'correct', text: 'Acertou! ✓' });
+        }
         addLog('correct', `Você acertou: ${guessedWord}`);
+        if (recoveredLife) {
+          addLog('correct', '❤️ 5 acertos, vida recuperada! ❤️');
+        }
       } else {
         setFeedbackMessage({ type: 'wrong', text: `Errou! -1 vida (${newLives} restante${newLives !== 1 ? 's' : ''})` });
         addLog('wrong', `Erro ao chutar: ${guessedWord}`);
@@ -121,6 +136,10 @@ export default function GameView() {
       const state = processor.startGame(parseInt(campaignId), parseInt(levelId));
       updateState(state);
       
+      const allProgress = getAllProgress();
+      const uniqueLevelId = `${campaignId}-${levelId}`;
+      setBestScore(allProgress[uniqueLevelId] || 0);
+
       setTimeout(() => {
         setShowIntro(false);
       }, 1800);
@@ -172,6 +191,16 @@ export default function GameView() {
             <aside className="game-sidebar game-sidebar-left">
               <div className="hint-card side-card">
                 
+                <div className="objective-section">
+                  <h3 className="hint-card-title">Seu Objetivo</h3>
+                  <HintPanel 
+                    currentHint={currentHint} 
+                    currentTargets={currentTargets} 
+                  />
+                </div>
+
+                <hr className="card-divider" />
+
                 <div className="info-card-internal">
                   <div className="info-row">
                     <span className="info-label">Campanha:</span>
@@ -181,16 +210,26 @@ export default function GameView() {
                     <span className="info-label">Fase:</span>
                     <span className="info-value">{processor.getLevelsForGame(parseInt(campaignId)).find(l => l.id === parseInt(levelId))?.name || 'Fase'}</span>
                   </div>
-                </div>
-
-                <hr className="card-divider" />
-
-                <div className="objective-section">
-                  <h3 className="hint-card-title">Seu Objetivo</h3>
-                  <HintPanel 
-                    currentHint={currentHint} 
-                    currentTargets={currentTargets} 
-                  />
+                  <div className="info-row score-row">
+                    <span className="info-label">Seu Recorde:</span>
+                    <span className="info-value stars-value">
+                      {bestScore > 0 ? (
+                        [...Array(3)].map((_, i) => (
+                          <FontAwesomeIcon 
+                            key={i} 
+                            icon={faStar} 
+                            style={{ 
+                              color: i < bestScore ? '#FFD700' : '#444', 
+                              marginLeft: '2px',
+                              fontSize: '0.8rem'
+                            }} 
+                          />
+                        ))
+                      ) : (
+                        <span style={{ fontSize: '0.75rem', color: '#888' }}>Não jogada</span>
+                      )}
+                    </span>
+                  </div>
                 </div>
 
                 <div className="lives-container">
@@ -203,6 +242,28 @@ export default function GameView() {
                     ))}
                   </div>
                 </div>
+                
+                {lives < 3 && (
+                  <div className="combo-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '15px' }}>
+                    <span className="lives-label" style={{ fontSize: '0.7rem', color: '#ffea00', marginBottom: '5px' }}>Combo +1 Vida</span>
+                    <div className="combo-indicator" style={{ display: 'flex', gap: '8px' }}>
+                      {[...Array(5)].map((_, i) => (
+                        <span 
+                          key={i} 
+                          className={`combo-bolt ${i < consecutiveCorrectGuesses ? 'active' : 'inactive'}`} 
+                          style={{ 
+                            color: i < consecutiveCorrectGuesses ? '#ffea00' : '#444', 
+                            transition: 'color 0.3s, transform 0.3s',
+                            transform: i < consecutiveCorrectGuesses ? 'scale(1.2)' : 'scale(1)',
+                            textShadow: i < consecutiveCorrectGuesses ? '0 0 5px #ffea00' : 'none'
+                          }}
+                        >
+                          <FontAwesomeIcon icon={faBolt} />
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                )}
 
               </div>
             </aside>

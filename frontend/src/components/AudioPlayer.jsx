@@ -5,13 +5,10 @@ import { faVolumeUp, faVolumeMute } from '@fortawesome/free-solid-svg-icons';
 import minigameMusic from '../assets/minigame.mp3';
 import './AudioPlayer.css';
 
-const PLAYLIST = [minigameMusic];
-
 export default function AudioPlayer() {
   const [isMuted, setIsMuted] = useState(true); // Start muted by default
   const [volume, setVolume] = useState(0.1); // 10% default volume
   const [isHovered, setIsHovered] = useState(false);
-  const [currentTrackIndex, setCurrentTrackIndex] = useState(0);
   
   const audioRef = useRef(null);
   const location = useLocation();
@@ -28,11 +25,7 @@ export default function AudioPlayer() {
         audioRef.current.pause();
       }
     }
-  }, [isPlayingGame, isMuted, volume, currentTrackIndex]);
-
-  const handleTrackEnded = () => {
-    setCurrentTrackIndex((prevIndex) => (prevIndex + 1) % PLAYLIST.length);
-  };
+  }, [isPlayingGame, isMuted, volume]);
 
   const toggleMute = () => {
     setIsMuted(!isMuted);
@@ -82,8 +75,8 @@ export default function AudioPlayer() {
     >
       <audio 
         ref={audioRef} 
-        src={PLAYLIST[currentTrackIndex]} 
-        onEnded={handleTrackEnded} 
+        src={minigameMusic} 
+        loop 
       />
       
       <button 
