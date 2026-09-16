@@ -1,9 +1,9 @@
-import defaultGames from '../games/default-games.json';
-import themedGames from '../games/themed-games.json';
-import { saveLevelProgress } from './progressStorage';
+import { saveLevelProgress, incrementAttempt } from './progressStorage';
 
-// In-memory static database
-const ALL_GAMES = [defaultGames, themedGames];
+// Dynamically import all JSON files from the games directory
+const gameModules = import.meta.glob('../games/*.json', { eager: true });
+
+const ALL_GAMES = Object.values(gameModules).map(module => module.default || module);
 
 class GameProcessor {
   constructor() {
@@ -63,6 +63,7 @@ class GameProcessor {
     };
 
     this.executeMasterTurn();
+    incrementAttempt(`${gameId}-${levelId}`);
     return this.getState();
   }
 

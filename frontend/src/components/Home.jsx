@@ -1,32 +1,38 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faArrowLeft, faGamepad } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
-import { getAllProgress } from '../services/progressStorage';
+import { getAllProgress, getAllAttempts } from '../services/progressStorage';
 import './Home.css';
 
 export default function Home() {
   const { campaignId } = useParams();
   const navigate = useNavigate();
   const [progress, setProgress] = useState({});
+  const [attemptsData, setAttemptsData] = useState({});
 
   useEffect(() => {
     setProgress(getAllProgress());
+    setAttemptsData(getAllAttempts());
   }, []);
 
   if (campaignId !== undefined) {
     const parsedCampaignId = parseInt(campaignId, 10);
     const levels = processor.getLevelsForGame(parsedCampaignId);
     
+    // Sort levels alphabetically
+    const sortedLevels = [...levels].sort((a, b) => a.name.localeCompare(b.name, 'pt-BR'));
+    
     return (
       <div className="home-container">
         <div className="home-content levels-content">
           <h1 className="home-title">Selecione uma Fase</h1>
           <div className="levels-grid">
-            {levels.map(level => {
+            {sortedLevels.map(level => {
               const uniqueLevelId = `${parsedCampaignId}-${level.id}`;
               const stars = progress[uniqueLevelId] || 0;
+              const attemptsCount = attemptsData[uniqueLevelId] || 0;
               
               return (
                 <button 
@@ -35,13 +41,24 @@ export default function Home() {
                   onClick={() => navigate(`/campaign/${parsedCampaignId}/level/${level.id}/play`)}
                 >
                   <div className="level-name">{level.name}</div>
-                  {stars > 0 && (
-                    <div className="level-stars">
-                      {Array.from({ length: stars }).map((_, i) => (
-                        <FontAwesomeIcon key={i} icon={faStar} style={{ color: '#FFD700', marginLeft: '2px' }} />
-                      ))}
-                    </div>
-                  )}
+                  
+                  <div className="level-stats" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px' }}>
+                    {attemptsCount > 0 && (
+                      <div className="level-attempts" style={{ fontSize: '0.8rem', color: '#aaa', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                        <FontAwesomeIcon icon={faGamepad} /> {attemptsCount}
+                      </div>
+                    )}
+                    {attemptsCount === 0 && (
+                      <div className="level-attempts"></div>
+                    )}
+                    {stars > 0 && (
+                      <div className="level-stars">
+                        {Array.from({ length: stars }).map((_, i) => (
+                          <FontAwesomeIcon key={i} icon={faStar} style={{ color: '#FFD700', marginLeft: '2px' }} />
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 </button>
               );
             })}

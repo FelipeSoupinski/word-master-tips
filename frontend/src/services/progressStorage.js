@@ -34,3 +34,31 @@ export function saveLevelProgress(levelId, stars) {
     console.error('Erro ao salvar progresso no localStorage:', error);
   }
 }
+
+const ATTEMPTS_KEY = 'dicaDeMestreAttempts';
+
+export function getAllAttempts() {
+  try {
+    const data = localStorage.getItem(ATTEMPTS_KEY);
+    return data ? JSON.parse(data) : {};
+  } catch (error) {
+    console.error('Erro ao ler tentativas do localStorage:', error);
+    return {};
+  }
+}
+
+export function getAttempts(levelId) {
+  const attempts = getAllAttempts();
+  return attempts[levelId] || 0;
+}
+
+export function incrementAttempt(levelId) {
+  try {
+    const attempts = getAllAttempts();
+    const current = attempts[levelId] || 0;
+    attempts[levelId] = current + 1;
+    localStorage.setItem(ATTEMPTS_KEY, JSON.stringify(attempts));
+  } catch (error) {
+    console.error('Erro ao salvar tentativas no localStorage:', error);
+  }
+}

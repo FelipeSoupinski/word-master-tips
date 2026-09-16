@@ -1,5 +1,5 @@
 {
-  "gameName": "Disciplinas Acadêmicas",
+  "gameName": "Temas Especiais",
   "levels": [
     {
       "id": 1,
@@ -2002,6 +2002,2796 @@
           "hint": "ALONGAMENTO",
           "targets": [
             "AQUECIMENTO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "subject": "Antropologia",
+      "words": [
+        "TRIBO",
+        "ALDEIA",
+        "CACIQUE",
+        "PAJÉ",
+        "COCAR",
+        "RITUAL",
+        "MITO",
+        "TABU",
+        "FEITIÇO",
+        "CHIMPANZÉ",
+        "GORILA",
+        "PRIMATA",
+        "FÓSSIL",
+        "OSSO",
+        "CRÂNIO",
+        "PÉLVIS",
+        "ESCAVAÇÃO",
+        "SÍTIO",
+        "ARTEFATO",
+        "PARENTESCO",
+        "FAMÍLIA",
+        "CASAMENTO",
+        "GENEALOGIA",
+        "EVOLUÇÃO",
+        "SELEÇÃO"
+      ],
+      "hints": [
+        {
+          "hint": "ÍNDIO",
+          "targets": [
+            "TRIBO",
+            "ALDEIA",
+            "CACIQUE",
+            "PAJÉ",
+            "COCAR"
+          ]
+        },
+        {
+          "hint": "MAGIA",
+          "targets": [
+            "RITUAL",
+            "MITO",
+            "TABU",
+            "FEITIÇO"
+          ]
+        },
+        {
+          "hint": "MACACO",
+          "targets": [
+            "CHIMPANZÉ",
+            "GORILA",
+            "PRIMATA"
+          ]
+        },
+        {
+          "hint": "ESQUELETO",
+          "targets": [
+            "FÓSSIL",
+            "OSSO",
+            "CRÂNIO",
+            "PÉLVIS"
+          ]
+        },
+        {
+          "hint": "ARQUEÓLOGO",
+          "targets": [
+            "ESCAVAÇÃO",
+            "SÍTIO",
+            "ARTEFATO"
+          ]
+        },
+        {
+          "hint": "LAÇO",
+          "targets": [
+            "PARENTESCO",
+            "FAMÍLIA",
+            "CASAMENTO",
+            "GENEALOGIA"
+          ]
+        },
+        {
+          "hint": "DARWIN",
+          "targets": [
+            "EVOLUÇÃO",
+            "SELEÇÃO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "subject": "Teologia",
+      "words": [
+        "GÊNESIS",
+        "APOCALIPSE",
+        "SALMO",
+        "EVANGELHO",
+        "PROFETA",
+        "ALTAR",
+        "CÚPULA",
+        "SINO",
+        "BANCO",
+        "DEUS",
+        "ANJO",
+        "SANTO",
+        "DIABO",
+        "DEMÔNIO",
+        "INFERNO",
+        "PECADO",
+        "BATISMO",
+        "COMUNHÃO",
+        "MISSA",
+        "PAPA",
+        "BISPO",
+        "PADRE",
+        "FREIRA",
+        "AMÉM",
+        "PRECE"
+      ],
+      "hints": [
+        {
+          "hint": "BÍBLIA",
+          "targets": [
+            "GÊNESIS",
+            "APOCALIPSE",
+            "SALMO",
+            "EVANGELHO",
+            "PROFETA"
+          ]
+        },
+        {
+          "hint": "IGREJA",
+          "targets": [
+            "ALTAR",
+            "CÚPULA",
+            "SINO",
+            "BANCO"
+          ]
+        },
+        {
+          "hint": "DIVINO",
+          "targets": [
+            "DEUS",
+            "ANJO",
+            "SANTO"
+          ]
+        },
+        {
+          "hint": "MALIGNO",
+          "targets": [
+            "DIABO",
+            "DEMÔNIO",
+            "INFERNO",
+            "PECADO"
+          ]
+        },
+        {
+          "hint": "RITO",
+          "targets": [
+            "BATISMO",
+            "COMUNHÃO",
+            "MISSA"
+          ]
+        },
+        {
+          "hint": "CLERO",
+          "targets": [
+            "PAPA",
+            "BISPO",
+            "PADRE",
+            "FREIRA"
+          ]
+        },
+        {
+          "hint": "ORAÇÃO",
+          "targets": [
+            "AMÉM",
+            "PRECE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "subject": "Gastronomia",
+      "words": [
+        "SAL",
+        "PIMENTA",
+        "ALHO",
+        "CEBOLA",
+        "ERVA",
+        "MASSA",
+        "FARINHA",
+        "FERMENTO",
+        "PÃO",
+        "FOGO",
+        "PANELA",
+        "FRIGIDEIRA",
+        "GARFO",
+        "FACA",
+        "COLHER",
+        "CONCHA",
+        "AÇÚCAR",
+        "CHOCOLATE",
+        "BOLO",
+        "AVENTAL",
+        "CHAPÉU",
+        "COZINHA",
+        "RECEITA",
+        "JULIENNE",
+        "FATIA"
+      ],
+      "hints": [
+        {
+          "hint": "TEMPERO",
+          "targets": [
+            "SAL",
+            "PIMENTA",
+            "ALHO",
+            "CEBOLA",
+            "ERVA"
+          ]
+        },
+        {
+          "hint": "PANIFICAÇÃO",
+          "targets": [
+            "MASSA",
+            "FARINHA",
+            "FERMENTO",
+            "PÃO"
+          ]
+        },
+        {
+          "hint": "FOGÃO",
+          "targets": [
+            "FOGO",
+            "PANELA",
+            "FRIGIDEIRA"
+          ]
+        },
+        {
+          "hint": "TALHER",
+          "targets": [
+            "GARFO",
+            "FACA",
+            "COLHER",
+            "CONCHA"
+          ]
+        },
+        {
+          "hint": "DOCE",
+          "targets": [
+            "AÇÚCAR",
+            "CHOCOLATE",
+            "BOLO"
+          ]
+        },
+        {
+          "hint": "CHEF",
+          "targets": [
+            "AVENTAL",
+            "CHAPÉU",
+            "COZINHA",
+            "RECEITA"
+          ]
+        },
+        {
+          "hint": "CORTE",
+          "targets": [
+            "JULIENNE",
+            "FATIA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "subject": "Agronomia",
+      "words": [
+        "TERRA",
+        "ADUBO",
+        "FERTILIZANTE",
+        "HÚMUS",
+        "ARGILA",
+        "TRATOR",
+        "CEIFEIRA",
+        "FOICE",
+        "ENXADA",
+        "SEMENTE",
+        "BROTO",
+        "MUDA",
+        "INSETO",
+        "FUNGO",
+        "ERVA-DANINHA",
+        "PESTICIDA",
+        "SOJA",
+        "MILHO",
+        "TRIGO",
+        "CHUVA",
+        "SECA",
+        "SOL",
+        "GEADA",
+        "PASTO",
+        "GADO"
+      ],
+      "hints": [
+        {
+          "hint": "SOLO",
+          "targets": [
+            "TERRA",
+            "ADUBO",
+            "FERTILIZANTE",
+            "HÚMUS",
+            "ARGILA"
+          ]
+        },
+        {
+          "hint": "COLHEITA",
+          "targets": [
+            "TRATOR",
+            "CEIFEIRA",
+            "FOICE",
+            "ENXADA"
+          ]
+        },
+        {
+          "hint": "PLANTAÇÃO",
+          "targets": [
+            "SEMENTE",
+            "BROTO",
+            "MUDA"
+          ]
+        },
+        {
+          "hint": "PRAGA",
+          "targets": [
+            "INSETO",
+            "FUNGO",
+            "ERVA-DANINHA",
+            "PESTICIDA"
+          ]
+        },
+        {
+          "hint": "GRÃO",
+          "targets": [
+            "SOJA",
+            "MILHO",
+            "TRIGO"
+          ]
+        },
+        {
+          "hint": "CLIMA",
+          "targets": [
+            "CHUVA",
+            "SECA",
+            "SOL",
+            "GEADA"
+          ]
+        },
+        {
+          "hint": "REBANHO",
+          "targets": [
+            "PASTO",
+            "GADO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "subject": "Pedagogia",
+      "words": [
+        "LOUSA",
+        "GIZ",
+        "CARTEIRA",
+        "APAGADOR",
+        "MURAL",
+        "CRIANÇA",
+        "ADOLESCENTE",
+        "ESTUDANTE",
+        "TURMA",
+        "LÁPIS",
+        "CADERNO",
+        "BORRACHA",
+        "PROVA",
+        "EXAME",
+        "NOTA",
+        "BOLETIM",
+        "DIDÁTICA",
+        "MÉTODO",
+        "TEORIA",
+        "PROFESSOR",
+        "DIRETOR",
+        "COORDENADOR",
+        "INSPETOR",
+        "PÁTIO",
+        "LANCHE"
+      ],
+      "hints": [
+        {
+          "hint": "SALA",
+          "targets": [
+            "LOUSA",
+            "GIZ",
+            "CARTEIRA",
+            "APAGADOR",
+            "MURAL"
+          ]
+        },
+        {
+          "hint": "ALUNO",
+          "targets": [
+            "CRIANÇA",
+            "ADOLESCENTE",
+            "ESTUDANTE",
+            "TURMA"
+          ]
+        },
+        {
+          "hint": "MATERIAL",
+          "targets": [
+            "LÁPIS",
+            "CADERNO",
+            "BORRACHA"
+          ]
+        },
+        {
+          "hint": "AVALIAÇÃO",
+          "targets": [
+            "PROVA",
+            "EXAME",
+            "NOTA",
+            "BOLETIM"
+          ]
+        },
+        {
+          "hint": "ENSINO",
+          "targets": [
+            "DIDÁTICA",
+            "MÉTODO",
+            "TEORIA"
+          ]
+        },
+        {
+          "hint": "PROFISSIONAL",
+          "targets": [
+            "PROFESSOR",
+            "DIRETOR",
+            "COORDENADOR",
+            "INSPETOR"
+          ]
+        },
+        {
+          "hint": "RECREIO",
+          "targets": [
+            "PÁTIO",
+            "LANCHE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "subject": "Nutrição",
+      "words": [
+        "JEJUM",
+        "CALORIA",
+        "PORÇÃO",
+        "BALANÇA",
+        "METABOLISMO",
+        "PROTEÍNA",
+        "CARBOIDRATO",
+        "GORDURA",
+        "LIPÍDIO",
+        "ALFACE",
+        "CENOURA",
+        "BRÓCOLIS",
+        "MAÇÃ",
+        "BANANA",
+        "LARANJA",
+        "MAMÃO",
+        "ÁGUA",
+        "SUCO",
+        "CHÁ",
+        "ESTÔMAGO",
+        "INTESTINO",
+        "MASTIGAÇÃO",
+        "ABSORÇÃO",
+        "OBESIDADE",
+        "DIABETES"
+      ],
+      "hints": [
+        {
+          "hint": "DIETA",
+          "targets": [
+            "JEJUM",
+            "CALORIA",
+            "PORÇÃO",
+            "BALANÇA",
+            "METABOLISMO"
+          ]
+        },
+        {
+          "hint": "MACRONUTRIENTE",
+          "targets": [
+            "PROTEÍNA",
+            "CARBOIDRATO",
+            "GORDURA",
+            "LIPÍDIO"
+          ]
+        },
+        {
+          "hint": "VEGETAL",
+          "targets": [
+            "ALFACE",
+            "CENOURA",
+            "BRÓCOLIS"
+          ]
+        },
+        {
+          "hint": "FRUTA",
+          "targets": [
+            "MAÇÃ",
+            "BANANA",
+            "LARANJA",
+            "MAMÃO"
+          ]
+        },
+        {
+          "hint": "BEBIDA",
+          "targets": [
+            "ÁGUA",
+            "SUCO",
+            "CHÁ"
+          ]
+        },
+        {
+          "hint": "DIGESTÃO",
+          "targets": [
+            "ESTÔMAGO",
+            "INTESTINO",
+            "MASTIGAÇÃO",
+            "ABSORÇÃO"
+          ]
+        },
+        {
+          "hint": "DOENÇA",
+          "targets": [
+            "OBESIDADE",
+            "DIABETES"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "subject": "Odontologia",
+      "words": [
+        "MOLAR",
+        "INCISIVO",
+        "CANINO",
+        "SISO",
+        "ESMALTE",
+        "ESCOVA",
+        "PASTA",
+        "FIO",
+        "ENXAGUANTE",
+        "CÁRIE",
+        "TÁRTARO",
+        "PLACA",
+        "MOTOR",
+        "BROCA",
+        "ESPELHO",
+        "PINÇA",
+        "BRAQUETE",
+        "ARAME",
+        "BORRACHA",
+        "GENGIVA",
+        "LÍNGUA",
+        "CÉU",
+        "SALIVA",
+        "ANESTESIA",
+        "EXTRAÇÃO"
+      ],
+      "hints": [
+        {
+          "hint": "DENTE",
+          "targets": [
+            "MOLAR",
+            "INCISIVO",
+            "CANINO",
+            "SISO",
+            "ESMALTE"
+          ]
+        },
+        {
+          "hint": "HIGIENE",
+          "targets": [
+            "ESCOVA",
+            "PASTA",
+            "FIO",
+            "ENXAGUANTE"
+          ]
+        },
+        {
+          "hint": "PROBLEMA",
+          "targets": [
+            "CÁRIE",
+            "TÁRTARO",
+            "PLACA"
+          ]
+        },
+        {
+          "hint": "FERRAMENTA",
+          "targets": [
+            "MOTOR",
+            "BROCA",
+            "ESPELHO",
+            "PINÇA"
+          ]
+        },
+        {
+          "hint": "APARELHO",
+          "targets": [
+            "BRAQUETE",
+            "ARAME",
+            "BORRACHA"
+          ]
+        },
+        {
+          "hint": "BOCA",
+          "targets": [
+            "GENGIVA",
+            "LÍNGUA",
+            "CÉU",
+            "SALIVA"
+          ]
+        },
+        {
+          "hint": "DOR",
+          "targets": [
+            "ANESTESIA",
+            "EXTRAÇÃO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "subject": "Medicina Veterinária",
+      "words": [
+        "CACHORRO",
+        "GATO",
+        "PÁSSARO",
+        "HAMSTER",
+        "PEIXE",
+        "CAVALO",
+        "VACA",
+        "OVELHA",
+        "PORCO",
+        "PULGA",
+        "CARRAPATO",
+        "VERME",
+        "RABO",
+        "FOCINHO",
+        "PATA",
+        "PELO",
+        "VACINA",
+        "RAÇÃO",
+        "COLEIRA",
+        "LEÃO",
+        "TIGRE",
+        "URSO",
+        "LOBO",
+        "TOSA",
+        "BANHO"
+      ],
+      "hints": [
+        {
+          "hint": "PET",
+          "targets": [
+            "CACHORRO",
+            "GATO",
+            "PÁSSARO",
+            "HAMSTER",
+            "PEIXE"
+          ]
+        },
+        {
+          "hint": "FAZENDA",
+          "targets": [
+            "CAVALO",
+            "VACA",
+            "OVELHA",
+            "PORCO"
+          ]
+        },
+        {
+          "hint": "PARASITA",
+          "targets": [
+            "PULGA",
+            "CARRAPATO",
+            "VERME"
+          ]
+        },
+        {
+          "hint": "ANATOMIA",
+          "targets": [
+            "RABO",
+            "FOCINHO",
+            "PATA",
+            "PELO"
+          ]
+        },
+        {
+          "hint": "SAÚDE",
+          "targets": [
+            "VACINA",
+            "RAÇÃO",
+            "COLEIRA"
+          ]
+        },
+        {
+          "hint": "SELVAGEM",
+          "targets": [
+            "LEÃO",
+            "TIGRE",
+            "URSO",
+            "LOBO"
+          ]
+        },
+        {
+          "hint": "CLÍNICA",
+          "targets": [
+            "TOSA",
+            "BANHO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "subject": "Jornalismo",
+      "words": [
+        "JORNAL",
+        "REVISTA",
+        "RÁDIO",
+        "TELEVISÃO",
+        "INTERNET",
+        "MANCHETE",
+        "LIDE",
+        "NOTÍCIA",
+        "REPORTAGEM",
+        "REPÓRTER",
+        "EDITOR",
+        "FOTÓGRAFO",
+        "CAPA",
+        "COLUNA",
+        "EDITORIAL",
+        "CADERNO",
+        "CÂMERA",
+        "MICROFONE",
+        "GRAVADOR",
+        "FONTE",
+        "ENTREVISTA",
+        "FURO",
+        "EXCLUSIVA",
+        "CRÍTICA",
+        "ARTIGO"
+      ],
+      "hints": [
+        {
+          "hint": "MÍDIA",
+          "targets": [
+            "JORNAL",
+            "REVISTA",
+            "RÁDIO",
+            "TELEVISÃO",
+            "INTERNET"
+          ]
+        },
+        {
+          "hint": "TEXTO",
+          "targets": [
+            "MANCHETE",
+            "LIDE",
+            "NOTÍCIA",
+            "REPORTAGEM"
+          ]
+        },
+        {
+          "hint": "PROFISSÃO",
+          "targets": [
+            "REPÓRTER",
+            "EDITOR",
+            "FOTÓGRAFO"
+          ]
+        },
+        {
+          "hint": "PÁGINA",
+          "targets": [
+            "CAPA",
+            "COLUNA",
+            "EDITORIAL",
+            "CADERNO"
+          ]
+        },
+        {
+          "hint": "EQUIPAMENTO",
+          "targets": [
+            "CÂMERA",
+            "MICROFONE",
+            "GRAVADOR"
+          ]
+        },
+        {
+          "hint": "INFORMAÇÃO",
+          "targets": [
+            "FONTE",
+            "ENTREVISTA",
+            "FURO",
+            "EXCLUSIVA"
+          ]
+        },
+        {
+          "hint": "OPINIÃO",
+          "targets": [
+            "CRÍTICA",
+            "ARTIGO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "subject": "Moda",
+      "words": [
+        "CAMISA",
+        "CALÇA",
+        "SAIA",
+        "VESTIDO",
+        "JAQUETA",
+        "BOLSA",
+        "CINTO",
+        "CHAPÉU",
+        "ÓCULOS",
+        "TÊNIS",
+        "BOTA",
+        "SALTO",
+        "AGULHA",
+        "LINHA",
+        "TECIDO",
+        "BOTÃO",
+        "PASSARELA",
+        "MODELO",
+        "ESTILISTA",
+        "ANEL",
+        "BRINCO",
+        "COLAR",
+        "PULSEIRA",
+        "MANEQUIM",
+        "FITA"
+      ],
+      "hints": [
+        {
+          "hint": "VESTUÁRIO",
+          "targets": [
+            "CAMISA",
+            "CALÇA",
+            "SAIA",
+            "VESTIDO",
+            "JAQUETA"
+          ]
+        },
+        {
+          "hint": "ACESSÓRIO",
+          "targets": [
+            "BOLSA",
+            "CINTO",
+            "CHAPÉU",
+            "ÓCULOS"
+          ]
+        },
+        {
+          "hint": "SAPATO",
+          "targets": [
+            "TÊNIS",
+            "BOTA",
+            "SALTO"
+          ]
+        },
+        {
+          "hint": "COSTURA",
+          "targets": [
+            "AGULHA",
+            "LINHA",
+            "TECIDO",
+            "BOTÃO"
+          ]
+        },
+        {
+          "hint": "DESFILE",
+          "targets": [
+            "PASSARELA",
+            "MODELO",
+            "ESTILISTA"
+          ]
+        },
+        {
+          "hint": "JOIA",
+          "targets": [
+            "ANEL",
+            "BRINCO",
+            "COLAR",
+            "PULSEIRA"
+          ]
+        },
+        {
+          "hint": "MEDIDA",
+          "targets": [
+            "MANEQUIM",
+            "FITA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "subject": "Arqueologia",
+      "words": [
+        "PÁ",
+        "PINCEL",
+        "TRENA",
+        "PENEIRA",
+        "BALDE",
+        "RUÍNA",
+        "TEMPLO",
+        "TÚMULO",
+        "MONUMENTO",
+        "CERÂMICA",
+        "BRONZE",
+        "PEDRA",
+        "ARTEFATO",
+        "OSSO",
+        "FÓSSIL",
+        "TESOURO",
+        "PRÉ-HISTÓRIA",
+        "ANTIGUIDADE",
+        "PASSADO",
+        "SÍTIO",
+        "CAVERNA",
+        "DESERTO",
+        "CAMPO",
+        "HIERÓGLIFO",
+        "PERGAMINHO"
+      ],
+      "hints": [
+        {
+          "hint": "ESCAVAÇÃO",
+          "targets": [
+            "PÁ",
+            "PINCEL",
+            "TRENA",
+            "PENEIRA",
+            "BALDE"
+          ]
+        },
+        {
+          "hint": "ESTRUTURA",
+          "targets": [
+            "RUÍNA",
+            "TEMPLO",
+            "TÚMULO",
+            "MONUMENTO"
+          ]
+        },
+        {
+          "hint": "MATERIAL",
+          "targets": [
+            "CERÂMICA",
+            "BRONZE",
+            "PEDRA"
+          ]
+        },
+        {
+          "hint": "VESTÍGIO",
+          "targets": [
+            "ARTEFATO",
+            "OSSO",
+            "FÓSSIL",
+            "TESOURO"
+          ]
+        },
+        {
+          "hint": "ÉPOCA",
+          "targets": [
+            "PRÉ-HISTÓRIA",
+            "ANTIGUIDADE",
+            "PASSADO"
+          ]
+        },
+        {
+          "hint": "LOCAL",
+          "targets": [
+            "SÍTIO",
+            "CAVERNA",
+            "DESERTO",
+            "CAMPO"
+          ]
+        },
+        {
+          "hint": "REGISTRO",
+          "targets": [
+            "HIERÓGLIFO",
+            "PERGAMINHO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "subject": "Design Gráfico",
+      "words": [
+        "PALETA",
+        "MATIZ",
+        "SATURAÇÃO",
+        "RGB",
+        "CMYK",
+        "LINHA",
+        "CURVA",
+        "VETOR",
+        "PIXEL",
+        "FONTE",
+        "LETRA",
+        "SERIFA",
+        "PHOTOSHOP",
+        "ILLUSTRATOR",
+        "TELA",
+        "MOUSE",
+        "PAPEL",
+        "TINTA",
+        "RESOLUÇÃO",
+        "LOGO",
+        "IDENTIDADE",
+        "SÍMBOLO",
+        "ÍCONE",
+        "ESPAÇO",
+        "GRADE"
+      ],
+      "hints": [
+        {
+          "hint": "COR",
+          "targets": [
+            "PALETA",
+            "MATIZ",
+            "SATURAÇÃO",
+            "RGB",
+            "CMYK"
+          ]
+        },
+        {
+          "hint": "FORMA",
+          "targets": [
+            "LINHA",
+            "CURVA",
+            "VETOR",
+            "PIXEL"
+          ]
+        },
+        {
+          "hint": "TIPOGRAFIA",
+          "targets": [
+            "FONTE",
+            "LETRA",
+            "SERIFA"
+          ]
+        },
+        {
+          "hint": "SOFTWARE",
+          "targets": [
+            "PHOTOSHOP",
+            "ILLUSTRATOR",
+            "TELA",
+            "MOUSE"
+          ]
+        },
+        {
+          "hint": "IMPRESSÃO",
+          "targets": [
+            "PAPEL",
+            "TINTA",
+            "RESOLUÇÃO"
+          ]
+        },
+        {
+          "hint": "MARCA",
+          "targets": [
+            "LOGO",
+            "IDENTIDADE",
+            "SÍMBOLO",
+            "ÍCONE"
+          ]
+        },
+        {
+          "hint": "LAYOUT",
+          "targets": [
+            "ESPAÇO",
+            "GRADE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "subject": "Mitologia",
+      "words": [
+        "ZEUS",
+        "HERA",
+        "ATENA",
+        "APOLO",
+        "POSEIDON",
+        "THOR",
+        "ODIN",
+        "LOKI",
+        "ASGARD",
+        "DRAGÃO",
+        "UNICÓRNIO",
+        "SEREIA",
+        "HÉRCULES",
+        "AQUILES",
+        "PERSEU",
+        "TESEU",
+        "MEDUSA",
+        "MINOTAURO",
+        "HIDRA",
+        "HADES",
+        "TÁRTARO",
+        "VALHALLA",
+        "LABIRINTO",
+        "LENDA",
+        "MITO"
+      ],
+      "hints": [
+        {
+          "hint": "OLIMPO",
+          "targets": [
+            "ZEUS",
+            "HERA",
+            "ATENA",
+            "APOLO",
+            "POSEIDON"
+          ]
+        },
+        {
+          "hint": "NÓRDICO",
+          "targets": [
+            "THOR",
+            "ODIN",
+            "LOKI",
+            "ASGARD"
+          ]
+        },
+        {
+          "hint": "CRIATURA",
+          "targets": [
+            "DRAGÃO",
+            "UNICÓRNIO",
+            "SEREIA"
+          ]
+        },
+        {
+          "hint": "HERÓI",
+          "targets": [
+            "HÉRCULES",
+            "AQUILES",
+            "PERSEU",
+            "TESEU"
+          ]
+        },
+        {
+          "hint": "MONSTRO",
+          "targets": [
+            "MEDUSA",
+            "MINOTAURO",
+            "HIDRA"
+          ]
+        },
+        {
+          "hint": "LUGAR",
+          "targets": [
+            "HADES",
+            "TÁRTARO",
+            "VALHALLA",
+            "LABIRINTO"
+          ]
+        },
+        {
+          "hint": "CONTO",
+          "targets": [
+            "LENDA",
+            "MITO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "subject": "Estatística",
+      "words": [
+        "PIZZA",
+        "BARRA",
+        "LINHA",
+        "DISPERSÃO",
+        "HISTOGRAMA",
+        "PROBABILIDADE",
+        "AMOSTRA",
+        "POPULAÇÃO",
+        "PERCENTUAL",
+        "NORMAL",
+        "SINO",
+        "CURVA",
+        "CENSO",
+        "QUESTIONÁRIO",
+        "ENTREVISTA",
+        "DADO",
+        "MARGEM",
+        "DESVIO",
+        "TENDÊNCIA",
+        "FREQUÊNCIA",
+        "ÍNDICE",
+        "TAXA",
+        "PROPORÇÃO",
+        "SORTEIO",
+        "ALEATÓRIO"
+      ],
+      "hints": [
+        {
+          "hint": "GRÁFICO",
+          "targets": [
+            "PIZZA",
+            "BARRA",
+            "LINHA",
+            "DISPERSÃO",
+            "HISTOGRAMA"
+          ]
+        },
+        {
+          "hint": "CONCEITO",
+          "targets": [
+            "PROBABILIDADE",
+            "AMOSTRA",
+            "POPULAÇÃO",
+            "PERCENTUAL"
+          ]
+        },
+        {
+          "hint": "DISTRIBUIÇÃO",
+          "targets": [
+            "NORMAL",
+            "SINO",
+            "CURVA"
+          ]
+        },
+        {
+          "hint": "PESQUISA",
+          "targets": [
+            "CENSO",
+            "QUESTIONÁRIO",
+            "ENTREVISTA",
+            "DADO"
+          ]
+        },
+        {
+          "hint": "ERRO",
+          "targets": [
+            "MARGEM",
+            "DESVIO",
+            "TENDÊNCIA"
+          ]
+        },
+        {
+          "hint": "RESULTADO",
+          "targets": [
+            "FREQUÊNCIA",
+            "ÍNDICE",
+            "TAXA",
+            "PROPORÇÃO"
+          ]
+        },
+        {
+          "hint": "ACASO",
+          "targets": [
+            "SORTEIO",
+            "ALEATÓRIO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "subject": "Oceanografia",
+      "words": [
+        "FOSSA",
+        "PLATAFORMA",
+        "ABISMO",
+        "CORAL",
+        "RECIFE",
+        "SALINIDADE",
+        "TEMPERATURA",
+        "PRESSÃO",
+        "DENSIDADE",
+        "CORRENTE",
+        "ONDA",
+        "MARÉ",
+        "BALEIA",
+        "TUBARÃO",
+        "GOLFINHO",
+        "TARTARUGA",
+        "NAVIO",
+        "SUBMARINO",
+        "SONAR",
+        "PRAIA",
+        "AREIA",
+        "BAÍA",
+        "ESTUÁRIO",
+        "FUNDO",
+        "OCEANO"
+      ],
+      "hints": [
+        {
+          "hint": "RELEVO",
+          "targets": [
+            "FOSSA",
+            "PLATAFORMA",
+            "ABISMO",
+            "CORAL",
+            "RECIFE"
+          ]
+        },
+        {
+          "hint": "ÁGUA",
+          "targets": [
+            "SALINIDADE",
+            "TEMPERATURA",
+            "PRESSÃO",
+            "DENSIDADE"
+          ]
+        },
+        {
+          "hint": "MOVIMENTO",
+          "targets": [
+            "CORRENTE",
+            "ONDA",
+            "MARÉ"
+          ]
+        },
+        {
+          "hint": "ANIMAL",
+          "targets": [
+            "BALEIA",
+            "TUBARÃO",
+            "GOLFINHO",
+            "TARTARUGA"
+          ]
+        },
+        {
+          "hint": "BARCO",
+          "targets": [
+            "NAVIO",
+            "SUBMARINO",
+            "SONAR"
+          ]
+        },
+        {
+          "hint": "COSTA",
+          "targets": [
+            "PRAIA",
+            "AREIA",
+            "BAÍA",
+            "ESTUÁRIO"
+          ]
+        },
+        {
+          "hint": "PROFUNDEZA",
+          "targets": [
+            "FUNDO",
+            "OCEANO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "subject": "Meteorologia",
+      "words": [
+        "CHUVA",
+        "NEVE",
+        "GRANIZO",
+        "GAROA",
+        "TEMPESTADE",
+        "BRISA",
+        "TORNADO",
+        "FURACÃO",
+        "CICLONE",
+        "CÚMULOS",
+        "NIMBUS",
+        "NEVOEIRO",
+        "RADAR",
+        "BARÔMETRO",
+        "TERMÔMETRO",
+        "SATÉLITE",
+        "PRIMAVERA",
+        "VERÃO",
+        "INVERNO",
+        "RAIO",
+        "TROVÃO",
+        "RELÂMPAGO",
+        "ARCO-ÍRIS",
+        "TEMPO",
+        "ALERTA"
+      ],
+      "hints": [
+        {
+          "hint": "PRECIPITAÇÃO",
+          "targets": [
+            "CHUVA",
+            "NEVE",
+            "GRANIZO",
+            "GAROA",
+            "TEMPESTADE"
+          ]
+        },
+        {
+          "hint": "VENTO",
+          "targets": [
+            "BRISA",
+            "TORNADO",
+            "FURACÃO",
+            "CICLONE"
+          ]
+        },
+        {
+          "hint": "NUVEM",
+          "targets": [
+            "CÚMULOS",
+            "NIMBUS",
+            "NEVOEIRO"
+          ]
+        },
+        {
+          "hint": "EQUIPAMENTO",
+          "targets": [
+            "RADAR",
+            "BARÔMETRO",
+            "TERMÔMETRO",
+            "SATÉLITE"
+          ]
+        },
+        {
+          "hint": "ESTAÇÃO",
+          "targets": [
+            "PRIMAVERA",
+            "VERÃO",
+            "INVERNO"
+          ]
+        },
+        {
+          "hint": "CÉU",
+          "targets": [
+            "RAIO",
+            "TROVÃO",
+            "RELÂMPAGO",
+            "ARCO-ÍRIS"
+          ]
+        },
+        {
+          "hint": "PREVISÃO",
+          "targets": [
+            "TEMPO",
+            "ALERTA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "subject": "Paleontologia",
+      "words": [
+        "T-REX",
+        "VELOCIRAPTOR",
+        "TRICERÁTOPS",
+        "PTERODÁCTILO",
+        "BRAQUIOSSAURO",
+        "FÓSSIL",
+        "PEGADA",
+        "COPRÓLITO",
+        "ÂMBAR",
+        "MESOZÓICA",
+        "JURÁSSICO",
+        "CRETÁCEO",
+        "DENTE",
+        "GARRA",
+        "OSSO",
+        "ESQUELETO",
+        "ESCAVAÇÃO",
+        "ROCHA",
+        "SEDIMENTO",
+        "METEORO",
+        "ASTEROIDE",
+        "VULCÃO",
+        "CRATERA",
+        "MUSEU",
+        "DIORAMA"
+      ],
+      "hints": [
+        {
+          "hint": "DINOSSAURO",
+          "targets": [
+            "T-REX",
+            "VELOCIRAPTOR",
+            "TRICERÁTOPS",
+            "PTERODÁCTILO",
+            "BRAQUIOSSAURO"
+          ]
+        },
+        {
+          "hint": "VESTÍGIO",
+          "targets": [
+            "FÓSSIL",
+            "PEGADA",
+            "COPRÓLITO",
+            "ÂMBAR"
+          ]
+        },
+        {
+          "hint": "ERA",
+          "targets": [
+            "MESOZÓICA",
+            "JURÁSSICO",
+            "CRETÁCEO"
+          ]
+        },
+        {
+          "hint": "ANATOMIA",
+          "targets": [
+            "DENTE",
+            "GARRA",
+            "OSSO",
+            "ESQUELETO"
+          ]
+        },
+        {
+          "hint": "TRABALHO",
+          "targets": [
+            "ESCAVAÇÃO",
+            "ROCHA",
+            "SEDIMENTO"
+          ]
+        },
+        {
+          "hint": "EXTINÇÃO",
+          "targets": [
+            "METEORO",
+            "ASTEROIDE",
+            "VULCÃO",
+            "CRATERA"
+          ]
+        },
+        {
+          "hint": "EXPOSIÇÃO",
+          "targets": [
+            "MUSEU",
+            "DIORAMA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "subject": "Logística",
+      "words": [
+        "CAMINHÃO",
+        "TREM",
+        "NAVIO",
+        "AVIÃO",
+        "CARRETA",
+        "ESTOQUE",
+        "GALPÃO",
+        "PRATELEIRA",
+        "PALETE",
+        "CAIXA",
+        "PLÁSTICO",
+        "PAPELÃO",
+        "FRETE",
+        "ROTA",
+        "DESTINO",
+        "ENDEREÇO",
+        "RASTREIO",
+        "CÓDIGO",
+        "ETIQUETA",
+        "MOTORISTA",
+        "ENTREGADOR",
+        "CONFERENTE",
+        "DESPACHANTE",
+        "PRAZO",
+        "ATRASO"
+      ],
+      "hints": [
+        {
+          "hint": "TRANSPORTE",
+          "targets": [
+            "CAMINHÃO",
+            "TREM",
+            "NAVIO",
+            "AVIÃO",
+            "CARRETA"
+          ]
+        },
+        {
+          "hint": "ARMAZÉM",
+          "targets": [
+            "ESTOQUE",
+            "GALPÃO",
+            "PRATELEIRA",
+            "PALETE"
+          ]
+        },
+        {
+          "hint": "EMBALAGEM",
+          "targets": [
+            "CAIXA",
+            "PLÁSTICO",
+            "PAPELÃO"
+          ]
+        },
+        {
+          "hint": "ENTREGA",
+          "targets": [
+            "FRETE",
+            "ROTA",
+            "DESTINO",
+            "ENDEREÇO"
+          ]
+        },
+        {
+          "hint": "CONTROLE",
+          "targets": [
+            "RASTREIO",
+            "CÓDIGO",
+            "ETIQUETA"
+          ]
+        },
+        {
+          "hint": "PROFISSIONAL",
+          "targets": [
+            "MOTORISTA",
+            "ENTREGADOR",
+            "CONFERENTE",
+            "DESPACHANTE"
+          ]
+        },
+        {
+          "hint": "TEMPO",
+          "targets": [
+            "PRAZO",
+            "ATRASO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "subject": "Robótica",
+      "words": [
+        "MOTOR",
+        "ENGRENAGEM",
+        "PARAFUSO",
+        "FIO",
+        "BATERIA",
+        "BRAÇO",
+        "GARRA",
+        "RODA",
+        "SENSOR",
+        "CÓDIGO",
+        "ALGORITMO",
+        "PROGRAMA",
+        "METAL",
+        "ALUMÍNIO",
+        "AÇO",
+        "PLÁSTICO",
+        "MONTAR",
+        "SOLDAR",
+        "CORTAR",
+        "DRONE",
+        "ANDROIDE",
+        "CIBORGUE",
+        "MÁQUINA",
+        "ELÉTRICA",
+        "CARGA"
+      ],
+      "hints": [
+        {
+          "hint": "PEÇA",
+          "targets": [
+            "MOTOR",
+            "ENGRENAGEM",
+            "PARAFUSO",
+            "FIO",
+            "BATERIA"
+          ]
+        },
+        {
+          "hint": "CORPO",
+          "targets": [
+            "BRAÇO",
+            "GARRA",
+            "RODA",
+            "SENSOR"
+          ]
+        },
+        {
+          "hint": "INTELIGÊNCIA",
+          "targets": [
+            "CÓDIGO",
+            "ALGORITMO",
+            "PROGRAMA"
+          ]
+        },
+        {
+          "hint": "MATERIAL",
+          "targets": [
+            "METAL",
+            "ALUMÍNIO",
+            "AÇO",
+            "PLÁSTICO"
+          ]
+        },
+        {
+          "hint": "FUNÇÃO",
+          "targets": [
+            "MONTAR",
+            "SOLDAR",
+            "CORTAR"
+          ]
+        },
+        {
+          "hint": "TIPO",
+          "targets": [
+            "DRONE",
+            "ANDROIDE",
+            "CIBORGUE",
+            "MÁQUINA"
+          ]
+        },
+        {
+          "hint": "ENERGIA",
+          "targets": [
+            "ELÉTRICA",
+            "CARGA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "subject": "Geologia",
+      "words": [
+        "MAGMÁTICA",
+        "SEDIMENTAR",
+        "METAMÓRFICA",
+        "GRANITO",
+        "BASALTO",
+        "CROSTA",
+        "MANTO",
+        "NÚCLEO",
+        "PLACA",
+        "TERREMOTO",
+        "TSUNAMI",
+        "TREMOR",
+        "LAVA",
+        "MAGMA",
+        "CINZA",
+        "CRATERA",
+        "QUARTZO",
+        "OURO",
+        "PRATA",
+        "CAVERNA",
+        "MONTANHA",
+        "FENDA",
+        "CÂNION",
+        "ERA",
+        "MILÊNIO"
+      ],
+      "hints": [
+        {
+          "hint": "ROCHA",
+          "targets": [
+            "MAGMÁTICA",
+            "SEDIMENTAR",
+            "METAMÓRFICA",
+            "GRANITO",
+            "BASALTO"
+          ]
+        },
+        {
+          "hint": "ESTRUTURA",
+          "targets": [
+            "CROSTA",
+            "MANTO",
+            "NÚCLEO",
+            "PLACA"
+          ]
+        },
+        {
+          "hint": "EVENTO",
+          "targets": [
+            "TERREMOTO",
+            "TSUNAMI",
+            "TREMOR"
+          ]
+        },
+        {
+          "hint": "VULCÃO",
+          "targets": [
+            "LAVA",
+            "MAGMA",
+            "CINZA",
+            "CRATERA"
+          ]
+        },
+        {
+          "hint": "MINERAL",
+          "targets": [
+            "QUARTZO",
+            "OURO",
+            "PRATA"
+          ]
+        },
+        {
+          "hint": "FORMAÇÃO",
+          "targets": [
+            "CAVERNA",
+            "MONTANHA",
+            "FENDA",
+            "CÂNION"
+          ]
+        },
+        {
+          "hint": "TEMPO",
+          "targets": [
+            "ERA",
+            "MILÊNIO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "subject": "Ciência Política",
+      "words": [
+        "DEMOCRACIA",
+        "DITADURA",
+        "MONARQUIA",
+        "REPÚBLICA",
+        "ANARQUIA",
+        "EXECUTIVO",
+        "LEGISLATIVO",
+        "JUDICIÁRIO",
+        "ESTADO",
+        "ESQUERDA",
+        "DIREITA",
+        "CENTRO",
+        "VOTO",
+        "URNA",
+        "CAMPANHA",
+        "CANDIDATO",
+        "CONSTITUIÇÃO",
+        "DECRETO",
+        "PROJETO",
+        "PRESIDENTE",
+        "GOVERNADOR",
+        "PREFEITO",
+        "SENADOR",
+        "POVO",
+        "CIDADÃO"
+      ],
+      "hints": [
+        {
+          "hint": "SISTEMA",
+          "targets": [
+            "DEMOCRACIA",
+            "DITADURA",
+            "MONARQUIA",
+            "REPÚBLICA",
+            "ANARQUIA"
+          ]
+        },
+        {
+          "hint": "PODER",
+          "targets": [
+            "EXECUTIVO",
+            "LEGISLATIVO",
+            "JUDICIÁRIO",
+            "ESTADO"
+          ]
+        },
+        {
+          "hint": "IDEOLOGIA",
+          "targets": [
+            "ESQUERDA",
+            "DIREITA",
+            "CENTRO"
+          ]
+        },
+        {
+          "hint": "ELEIÇÃO",
+          "targets": [
+            "VOTO",
+            "URNA",
+            "CAMPANHA",
+            "CANDIDATO"
+          ]
+        },
+        {
+          "hint": "LEI",
+          "targets": [
+            "CONSTITUIÇÃO",
+            "DECRETO",
+            "PROJETO"
+          ]
+        },
+        {
+          "hint": "CARGO",
+          "targets": [
+            "PRESIDENTE",
+            "GOVERNADOR",
+            "PREFEITO",
+            "SENADOR"
+          ]
+        },
+        {
+          "hint": "SOCIEDADE",
+          "targets": [
+            "POVO",
+            "CIDADÃO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "subject": "Ecologia",
+      "words": [
+        "NATUREZA",
+        "FLORESTA",
+        "RIO",
+        "OCEANO",
+        "FAUNA",
+        "LIXO",
+        "FUMAÇA",
+        "PLÁSTICO",
+        "ESGOTO",
+        "PRODUTOR",
+        "CONSUMIDOR",
+        "DECOMPOSITOR",
+        "DESMATAMENTO",
+        "QUEIMADA",
+        "EXTINÇÃO",
+        "AQUECIMENTO",
+        "RECICLAGEM",
+        "CONSERVAÇÃO",
+        "SUSTENTÁVEL",
+        "SOLAR",
+        "EÓLICA",
+        "RENOVÁVEL",
+        "LIMPA",
+        "TERRA",
+        "GLOBO"
+      ],
+      "hints": [
+        {
+          "hint": "MEIO-AMBIENTE",
+          "targets": [
+            "NATUREZA",
+            "FLORESTA",
+            "RIO",
+            "OCEANO",
+            "FAUNA"
+          ]
+        },
+        {
+          "hint": "POLUIÇÃO",
+          "targets": [
+            "LIXO",
+            "FUMAÇA",
+            "PLÁSTICO",
+            "ESGOTO"
+          ]
+        },
+        {
+          "hint": "CADEIA",
+          "targets": [
+            "PRODUTOR",
+            "CONSUMIDOR",
+            "DECOMPOSITOR"
+          ]
+        },
+        {
+          "hint": "AMEAÇA",
+          "targets": [
+            "DESMATAMENTO",
+            "QUEIMADA",
+            "EXTINÇÃO",
+            "AQUECIMENTO"
+          ]
+        },
+        {
+          "hint": "SOLUÇÃO",
+          "targets": [
+            "RECICLAGEM",
+            "CONSERVAÇÃO",
+            "SUSTENTÁVEL"
+          ]
+        },
+        {
+          "hint": "ENERGIA",
+          "targets": [
+            "SOLAR",
+            "EÓLICA",
+            "RENOVÁVEL",
+            "LIMPA"
+          ]
+        },
+        {
+          "hint": "PLANETA",
+          "targets": [
+            "TERRA",
+            "GLOBO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "subject": "Farmácia",
+      "words": [
+        "COMPRIMIDO",
+        "XAROPE",
+        "CÁPSULA",
+        "POMADA",
+        "INJEÇÃO",
+        "PRESCRIÇÃO",
+        "BULA",
+        "DOSE",
+        "MÉDICO",
+        "CURA",
+        "ALÍVIO",
+        "COLATERAL",
+        "BALCÃO",
+        "PRATELEIRA",
+        "CAIXA",
+        "ESTOQUE",
+        "COSMÉTICO",
+        "PERFUME",
+        "FRALDA",
+        "FÓRMULA",
+        "PRINCÍPIO",
+        "ATIVO",
+        "QUÍMICA",
+        "DOR",
+        "FEBRE"
+      ],
+      "hints": [
+        {
+          "hint": "MEDICAMENTO",
+          "targets": [
+            "COMPRIMIDO",
+            "XAROPE",
+            "CÁPSULA",
+            "POMADA",
+            "INJEÇÃO"
+          ]
+        },
+        {
+          "hint": "RECEITA",
+          "targets": [
+            "PRESCRIÇÃO",
+            "BULA",
+            "DOSE",
+            "MÉDICO"
+          ]
+        },
+        {
+          "hint": "EFEITO",
+          "targets": [
+            "CURA",
+            "ALÍVIO",
+            "COLATERAL"
+          ]
+        },
+        {
+          "hint": "LOCAL",
+          "targets": [
+            "BALCÃO",
+            "PRATELEIRA",
+            "CAIXA",
+            "ESTOQUE"
+          ]
+        },
+        {
+          "hint": "PRODUTO",
+          "targets": [
+            "COSMÉTICO",
+            "PERFUME",
+            "FRALDA"
+          ]
+        },
+        {
+          "hint": "COMPONENTE",
+          "targets": [
+            "FÓRMULA",
+            "PRINCÍPIO",
+            "ATIVO",
+            "QUÍMICA"
+          ]
+        },
+        {
+          "hint": "SINTOMA",
+          "targets": [
+            "DOR",
+            "FEBRE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "subject": "Contabilidade",
+      "words": [
+        "ATIVO",
+        "PASSIVO",
+        "PATRIMÔNIO",
+        "RECEITA",
+        "DESPESA",
+        "NOTA",
+        "RECIBO",
+        "FATURA",
+        "CHEQUE",
+        "TAXA",
+        "TRIBUTO",
+        "LEÃO",
+        "LIVRO",
+        "PLANILHA",
+        "CAIXA",
+        "SALDO",
+        "CONTADOR",
+        "AUDITOR",
+        "FISCAL",
+        "LUCRO",
+        "PREJUÍZO",
+        "CAPITAL",
+        "SÓCIO",
+        "SOMA",
+        "PORCENTAGEM"
+      ],
+      "hints": [
+        {
+          "hint": "BALANÇO",
+          "targets": [
+            "ATIVO",
+            "PASSIVO",
+            "PATRIMÔNIO",
+            "RECEITA",
+            "DESPESA"
+          ]
+        },
+        {
+          "hint": "DOCUMENTO",
+          "targets": [
+            "NOTA",
+            "RECIBO",
+            "FATURA",
+            "CHEQUE"
+          ]
+        },
+        {
+          "hint": "IMPOSTO",
+          "targets": [
+            "TAXA",
+            "TRIBUTO",
+            "LEÃO"
+          ]
+        },
+        {
+          "hint": "RELATÓRIO",
+          "targets": [
+            "LIVRO",
+            "PLANILHA",
+            "CAIXA",
+            "SALDO"
+          ]
+        },
+        {
+          "hint": "PROFISSIONAL",
+          "targets": [
+            "CONTADOR",
+            "AUDITOR",
+            "FISCAL"
+          ]
+        },
+        {
+          "hint": "EMPRESA",
+          "targets": [
+            "LUCRO",
+            "PREJUÍZO",
+            "CAPITAL",
+            "SÓCIO"
+          ]
+        },
+        {
+          "hint": "CÁLCULO",
+          "targets": [
+            "SOMA",
+            "PORCENTAGEM"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "subject": "Administração",
+      "words": [
+        "PLANEJAMENTO",
+        "ORGANIZAÇÃO",
+        "DIREÇÃO",
+        "CONTROLE",
+        "ESTRATÉGIA",
+        "HUMANOS",
+        "FINANCEIROS",
+        "MATERIAIS",
+        "TECNOLÓGICOS",
+        "CHEFE",
+        "GERENTE",
+        "DIRETOR",
+        "REUNIÃO",
+        "META",
+        "PROJETO",
+        "PRAZO",
+        "VENDAS",
+        "MARKETING",
+        "OPERAÇÃO",
+        "EQUIPE",
+        "COLABORADOR",
+        "ESTAGIÁRIO",
+        "ASSISTENTE",
+        "ESCRITÓRIO",
+        "EMPRESA"
+      ],
+      "hints": [
+        {
+          "hint": "GESTÃO",
+          "targets": [
+            "PLANEJAMENTO",
+            "ORGANIZAÇÃO",
+            "DIREÇÃO",
+            "CONTROLE",
+            "ESTRATÉGIA"
+          ]
+        },
+        {
+          "hint": "RECURSOS",
+          "targets": [
+            "HUMANOS",
+            "FINANCEIROS",
+            "MATERIAIS",
+            "TECNOLÓGICOS"
+          ]
+        },
+        {
+          "hint": "LÍDER",
+          "targets": [
+            "CHEFE",
+            "GERENTE",
+            "DIRETOR"
+          ]
+        },
+        {
+          "hint": "ROTINA",
+          "targets": [
+            "REUNIÃO",
+            "META",
+            "PROJETO",
+            "PRAZO"
+          ]
+        },
+        {
+          "hint": "SETOR",
+          "targets": [
+            "VENDAS",
+            "MARKETING",
+            "OPERAÇÃO"
+          ]
+        },
+        {
+          "hint": "FUNCIONÁRIO",
+          "targets": [
+            "EQUIPE",
+            "COLABORADOR",
+            "ESTAGIÁRIO",
+            "ASSISTENTE"
+          ]
+        },
+        {
+          "hint": "AMBIENTE",
+          "targets": [
+            "ESCRITÓRIO",
+            "EMPRESA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "subject": "Engenharia Mecânica",
+      "words": [
+        "PISTÃO",
+        "VELA",
+        "CILINDRO",
+        "VÁLVULA",
+        "ESCAPAMENTO",
+        "CARRO",
+        "CAMINHÃO",
+        "MOTO",
+        "TRATOR",
+        "CHAVE",
+        "ALICATE",
+        "MARTELO",
+        "ENGRENAGEM",
+        "CORREIA",
+        "EIXO",
+        "ROLAMENTO",
+        "ÓLEO",
+        "GRAXA",
+        "COMBUSTÍVEL",
+        "AÇO",
+        "FERRO",
+        "ALUMÍNIO",
+        "COBRE",
+        "TORQUE",
+        "POTÊNCIA"
+      ],
+      "hints": [
+        {
+          "hint": "MOTOR",
+          "targets": [
+            "PISTÃO",
+            "VELA",
+            "CILINDRO",
+            "VÁLVULA",
+            "ESCAPAMENTO"
+          ]
+        },
+        {
+          "hint": "VEÍCULO",
+          "targets": [
+            "CARRO",
+            "CAMINHÃO",
+            "MOTO",
+            "TRATOR"
+          ]
+        },
+        {
+          "hint": "FERRAMENTA",
+          "targets": [
+            "CHAVE",
+            "ALICATE",
+            "MARTELO"
+          ]
+        },
+        {
+          "hint": "MECANISMO",
+          "targets": [
+            "ENGRENAGEM",
+            "CORREIA",
+            "EIXO",
+            "ROLAMENTO"
+          ]
+        },
+        {
+          "hint": "FLUIDO",
+          "targets": [
+            "ÓLEO",
+            "GRAXA",
+            "COMBUSTÍVEL"
+          ]
+        },
+        {
+          "hint": "METAL",
+          "targets": [
+            "AÇO",
+            "FERRO",
+            "ALUMÍNIO",
+            "COBRE"
+          ]
+        },
+        {
+          "hint": "MEDIDA",
+          "targets": [
+            "TORQUE",
+            "POTÊNCIA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "subject": "Engenharia Elétrica",
+      "words": [
+        "FIO",
+        "CABO",
+        "RESISTOR",
+        "CAPACITOR",
+        "PLACA",
+        "CORRENTE",
+        "TENSÃO",
+        "VOLTAGEM",
+        "POTÊNCIA",
+        "LÂMPADA",
+        "TOMADA",
+        "INTERRUPTOR",
+        "FUSÍVEL",
+        "DISJUNTOR",
+        "ATERRAMENTO",
+        "ISOLANTE",
+        "BATERIA",
+        "PILHA",
+        "GERADOR",
+        "MOTOR",
+        "TRANSFORMADOR",
+        "INVERSOR",
+        "MEDIDOR",
+        "CHOQUE",
+        "RAIO"
+      ],
+      "hints": [
+        {
+          "hint": "CIRCUITO",
+          "targets": [
+            "FIO",
+            "CABO",
+            "RESISTOR",
+            "CAPACITOR",
+            "PLACA"
+          ]
+        },
+        {
+          "hint": "ENERGIA",
+          "targets": [
+            "CORRENTE",
+            "TENSÃO",
+            "VOLTAGEM",
+            "POTÊNCIA"
+          ]
+        },
+        {
+          "hint": "COMPONENTE",
+          "targets": [
+            "LÂMPADA",
+            "TOMADA",
+            "INTERRUPTOR"
+          ]
+        },
+        {
+          "hint": "PROTEÇÃO",
+          "targets": [
+            "FUSÍVEL",
+            "DISJUNTOR",
+            "ATERRAMENTO",
+            "ISOLANTE"
+          ]
+        },
+        {
+          "hint": "GERAÇÃO",
+          "targets": [
+            "BATERIA",
+            "PILHA",
+            "GERADOR"
+          ]
+        },
+        {
+          "hint": "APARELHO",
+          "targets": [
+            "MOTOR",
+            "TRANSFORMADOR",
+            "INVERSOR",
+            "MEDIDOR"
+          ]
+        },
+        {
+          "hint": "FENÔMENO",
+          "targets": [
+            "CHOQUE",
+            "RAIO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "subject": "Turismo",
+      "words": [
+        "PASSAGEM",
+        "MALA",
+        "PASSAPORTE",
+        "VISTO",
+        "BILHETE",
+        "AVIÃO",
+        "ÔNIBUS",
+        "CRUZEIRO",
+        "TREM",
+        "HOTEL",
+        "POUSADA",
+        "RESORT",
+        "MUSEU",
+        "PRAIA",
+        "PARQUE",
+        "MONUMENTO",
+        "MAPA",
+        "ROTEIRO",
+        "EXCURSÃO",
+        "FOTO",
+        "SOUVENIR",
+        "CARTÃO",
+        "PRESENTE",
+        "FÉRIAS",
+        "FERIADO"
+      ],
+      "hints": [
+        {
+          "hint": "VIAGEM",
+          "targets": [
+            "PASSAGEM",
+            "MALA",
+            "PASSAPORTE",
+            "VISTO",
+            "BILHETE"
+          ]
+        },
+        {
+          "hint": "TRANSPORTE",
+          "targets": [
+            "AVIÃO",
+            "ÔNIBUS",
+            "CRUZEIRO",
+            "TREM"
+          ]
+        },
+        {
+          "hint": "HOSPEDAGEM",
+          "targets": [
+            "HOTEL",
+            "POUSADA",
+            "RESORT"
+          ]
+        },
+        {
+          "hint": "ATRAÇÃO",
+          "targets": [
+            "MUSEU",
+            "PRAIA",
+            "PARQUE",
+            "MONUMENTO"
+          ]
+        },
+        {
+          "hint": "GUIA",
+          "targets": [
+            "MAPA",
+            "ROTEIRO",
+            "EXCURSÃO"
+          ]
+        },
+        {
+          "hint": "LEMBRANÇA",
+          "targets": [
+            "FOTO",
+            "SOUVENIR",
+            "CARTÃO",
+            "PRESENTE"
+          ]
+        },
+        {
+          "hint": "TEMPO",
+          "targets": [
+            "FÉRIAS",
+            "FERIADO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "subject": "Relações Internacionais",
+      "words": [
+        "EMBAIXADA",
+        "CONSULADO",
+        "ACORDO",
+        "TRATADO",
+        "ALIANÇA",
+        "PAÍS",
+        "FRONTEIRA",
+        "TERRITÓRIO",
+        "SOBERANIA",
+        "PASSAPORTE",
+        "VISTO",
+        "ASILO",
+        "GUERRA",
+        "PAZ",
+        "SANÇÃO",
+        "EMBARGO",
+        "ONU",
+        "OMC",
+        "OMS",
+        "EMBAIXADOR",
+        "CÔNSUL",
+        "DIPLOMATA",
+        "TRADUTOR",
+        "DÓLAR",
+        "EURO"
+      ],
+      "hints": [
+        {
+          "hint": "DIPLOMACIA",
+          "targets": [
+            "EMBAIXADA",
+            "CONSULADO",
+            "ACORDO",
+            "TRATADO",
+            "ALIANÇA"
+          ]
+        },
+        {
+          "hint": "NAÇÃO",
+          "targets": [
+            "PAÍS",
+            "FRONTEIRA",
+            "TERRITÓRIO",
+            "SOBERANIA"
+          ]
+        },
+        {
+          "hint": "DOCUMENTO",
+          "targets": [
+            "PASSAPORTE",
+            "VISTO",
+            "ASILO"
+          ]
+        },
+        {
+          "hint": "CONFLITO",
+          "targets": [
+            "GUERRA",
+            "PAZ",
+            "SANÇÃO",
+            "EMBARGO"
+          ]
+        },
+        {
+          "hint": "ORGANIZAÇÃO",
+          "targets": [
+            "ONU",
+            "OMC",
+            "OMS"
+          ]
+        },
+        {
+          "hint": "PROFISSIONAL",
+          "targets": [
+            "EMBAIXADOR",
+            "CÔNSUL",
+            "DIPLOMATA",
+            "TRADUTOR"
+          ]
+        },
+        {
+          "hint": "MOEDA",
+          "targets": [
+            "DÓLAR",
+            "EURO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 50,
+      "subject": "Enfermagem",
+      "words": [
+        "SERINGA",
+        "AGULHA",
+        "GAZE",
+        "ATADURA",
+        "CURATIVO",
+        "PRESSÃO",
+        "PULSO",
+        "FEBRE",
+        "RESPIRAÇÃO",
+        "LEITO",
+        "MACA",
+        "ENFERMARIA",
+        "BANHO",
+        "REMÉDIO",
+        "SORO",
+        "VACINA",
+        "SANGUE",
+        "URINA",
+        "SALIVA",
+        "ENFERMEIRO",
+        "TÉCNICO",
+        "AUXILIAR",
+        "MÉDICO",
+        "DOR",
+        "ALÍVIO"
+      ],
+      "hints": [
+        {
+          "hint": "EQUIPAMENTO",
+          "targets": [
+            "SERINGA",
+            "AGULHA",
+            "GAZE",
+            "ATADURA",
+            "CURATIVO"
+          ]
+        },
+        {
+          "hint": "SINAL",
+          "targets": [
+            "PRESSÃO",
+            "PULSO",
+            "FEBRE",
+            "RESPIRAÇÃO"
+          ]
+        },
+        {
+          "hint": "LOCAL",
+          "targets": [
+            "LEITO",
+            "MACA",
+            "ENFERMARIA"
+          ]
+        },
+        {
+          "hint": "CUIDADO",
+          "targets": [
+            "BANHO",
+            "REMÉDIO",
+            "SORO",
+            "VACINA"
+          ]
+        },
+        {
+          "hint": "FLUIDO",
+          "targets": [
+            "SANGUE",
+            "URINA",
+            "SALIVA"
+          ]
+        },
+        {
+          "hint": "PROFISSIONAL",
+          "targets": [
+            "ENFERMEIRO",
+            "TÉCNICO",
+            "AUXILIAR",
+            "MÉDICO"
+          ]
+        },
+        {
+          "hint": "ESTADO",
+          "targets": [
+            "DOR",
+            "ALÍVIO"
           ]
         }
       ]

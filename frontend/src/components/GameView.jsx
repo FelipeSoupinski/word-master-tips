@@ -9,9 +9,9 @@ import Toast from './Toast';
 import IntroBanner from './IntroBanner';
 import GameLog from './GameLog';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart, faArrowLeft, faStar, faBolt } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faArrowLeft, faStar, faBolt, faGamepad } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
-import { getAllProgress } from '../services/progressStorage';
+import { getAllProgress, getAttempts } from '../services/progressStorage';
 
 export default function GameView() {
   const { campaignId, levelId } = useParams();
@@ -24,6 +24,7 @@ export default function GameView() {
   const [currentTargets, setCurrentTargets] = useState(0);
   const [error, setError] = useState(null);
   const [bestScore, setBestScore] = useState(0);
+  const [attempts, setAttempts] = useState(0);
   const [consecutiveCorrectGuesses, setConsecutiveCorrectGuesses] = useState(0);
   
   const [lives, setLives] = useState(3);
@@ -54,6 +55,7 @@ export default function GameView() {
       const allProgress = getAllProgress();
       const uniqueLevelId = `${campaignId}-${levelId}`;
       setBestScore(allProgress[uniqueLevelId] || 0);
+      setAttempts(getAttempts(uniqueLevelId));
 
       // Stop intro animation after 1.8 seconds
       const timer = setTimeout(() => {
@@ -139,6 +141,7 @@ export default function GameView() {
       const allProgress = getAllProgress();
       const uniqueLevelId = `${campaignId}-${levelId}`;
       setBestScore(allProgress[uniqueLevelId] || 0);
+      setAttempts(getAttempts(uniqueLevelId));
 
       setTimeout(() => {
         setShowIntro(false);
@@ -230,6 +233,13 @@ export default function GameView() {
                       )}
                     </span>
                   </div>
+                  <div className="info-row">
+                    <span className="info-label">
+                      <FontAwesomeIcon icon={faGamepad} style={{ marginRight: '5px' }} />
+                      Tentativas
+                    </span>
+                    <span className="info-value">{attempts}</span>
+                  </div>
                 </div>
 
                 <div className="lives-container">
@@ -241,29 +251,29 @@ export default function GameView() {
                       </span>
                     ))}
                   </div>
-                </div>
-                
-                {lives < 3 && (
-                  <div className="combo-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '15px' }}>
-                    <span className="lives-label" style={{ fontSize: '0.7rem', color: '#ffea00', marginBottom: '5px' }}>Combo +1 Vida</span>
-                    <div className="combo-indicator" style={{ display: 'flex', gap: '8px' }}>
-                      {[...Array(5)].map((_, i) => (
-                        <span 
-                          key={i} 
-                          className={`combo-bolt ${i < consecutiveCorrectGuesses ? 'active' : 'inactive'}`} 
-                          style={{ 
-                            color: i < consecutiveCorrectGuesses ? '#ffea00' : '#444', 
-                            transition: 'color 0.3s, transform 0.3s',
-                            transform: i < consecutiveCorrectGuesses ? 'scale(1.2)' : 'scale(1)',
-                            textShadow: i < consecutiveCorrectGuesses ? '0 0 5px #ffea00' : 'none'
-                          }}
-                        >
-                          <FontAwesomeIcon icon={faBolt} />
-                        </span>
-                      ))}
+
+                  {lives < 3 && (
+                    <div className="combo-container" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '8px' }}>
+                      <span className="lives-label" style={{ fontSize: '0.65rem', color: '#ffea00', marginBottom: '2px' }}>Combo +1 Vida</span>
+                      <div className="combo-indicator" style={{ display: 'flex', gap: '4px', fontSize: '0.8rem' }}>
+                        {[...Array(5)].map((_, i) => (
+                          <span 
+                            key={i} 
+                            className={`combo-bolt ${i < consecutiveCorrectGuesses ? 'active' : 'inactive'}`} 
+                            style={{ 
+                              color: i < consecutiveCorrectGuesses ? '#ffea00' : '#444', 
+                              transition: 'color 0.3s, transform 0.3s',
+                              transform: i < consecutiveCorrectGuesses ? 'scale(1.1)' : 'scale(1)',
+                              textShadow: i < consecutiveCorrectGuesses ? '0 0 5px #ffea00' : 'none'
+                            }}
+                          >
+                            <FontAwesomeIcon icon={faBolt} />
+                          </span>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                )}
+                  )}
+                </div>
 
               </div>
             </aside>
