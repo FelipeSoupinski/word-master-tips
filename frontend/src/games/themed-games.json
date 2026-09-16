@@ -1,0 +1,2010 @@
+{
+  "gameName": "Disciplinas Acadêmicas",
+  "levels": [
+    {
+      "id": 1,
+      "subject": "Física",
+      "words": [
+        "GRAVIDADE",
+        "MASSA",
+        "ACELERAÇÃO",
+        "FORÇA",
+        "INÉRCIA",
+        "CALOR",
+        "TEMPERATURA",
+        "ENERGIA",
+        "LUZ",
+        "ONDA",
+        "SOM",
+        "FREQUÊNCIA",
+        "ÁTOMO",
+        "ELÉTRON",
+        "PRÓTON",
+        "NÊUTRON",
+        "ESPAÇO",
+        "TEMPO",
+        "VÁCUO",
+        "LENTE",
+        "ÓPTICA",
+        "MAGNETISMO",
+        "RELATIVIDADE",
+        "PÊNDULO",
+        "BÓSON"
+      ],
+      "hints": [
+        {
+          "hint": "MECÂNICA",
+          "targets": [
+            "GRAVIDADE",
+            "MASSA",
+            "ACELERAÇÃO",
+            "FORÇA",
+            "INÉRCIA"
+          ]
+        },
+        {
+          "hint": "TERMODINÂMICA",
+          "targets": [
+            "CALOR",
+            "TEMPERATURA",
+            "ENERGIA"
+          ]
+        },
+        {
+          "hint": "RADIAÇÃO",
+          "targets": [
+            "LUZ",
+            "ONDA",
+            "SOM",
+            "FREQUÊNCIA"
+          ]
+        },
+        {
+          "hint": "NÚCLEO",
+          "targets": [
+            "ÁTOMO",
+            "ELÉTRON",
+            "PRÓTON",
+            "NÊUTRON"
+          ]
+        },
+        {
+          "hint": "UNIVERSO",
+          "targets": [
+            "ESPAÇO",
+            "TEMPO",
+            "VÁCUO"
+          ]
+        },
+        {
+          "hint": "VISÃO",
+          "targets": [
+            "LENTE",
+            "ÓPTICA"
+          ]
+        },
+        {
+          "hint": "BÚSSOLA",
+          "targets": [
+            "MAGNETISMO"
+          ]
+        },
+        {
+          "hint": "EINSTEIN",
+          "targets": [
+            "RELATIVIDADE"
+          ]
+        },
+        {
+          "hint": "BALANÇO",
+          "targets": [
+            "PÊNDULO"
+          ]
+        },
+        {
+          "hint": "HIGGS",
+          "targets": [
+            "BÓSON"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "História",
+      "words": [
+        "PIRÂMIDE",
+        "FARAÓ",
+        "NILO",
+        "ESFINGE",
+        "GLADIADOR",
+        "IMPÉRIO",
+        "CÉSAR",
+        "COLISEU",
+        "LEGIONÁRIO",
+        "CASTELO",
+        "CAVALEIRO",
+        "FEUDO",
+        "CRUZADA",
+        "REI",
+        "CARAVELA",
+        "BÚSSOLA",
+        "DESCOBERTA",
+        "MAPA",
+        "TRINCHEIRA",
+        "ALIADOS",
+        "BOMBA",
+        "GUILHOTINA",
+        "BASTILHA",
+        "PRÉ-HISTÓRIA",
+        "ABOLIÇÃO"
+      ],
+      "hints": [
+        {
+          "hint": "ROMA",
+          "targets": [
+            "GLADIADOR",
+            "IMPÉRIO",
+            "CÉSAR",
+            "COLISEU",
+            "LEGIONÁRIO"
+          ]
+        },
+        {
+          "hint": "MEDIEVAL",
+          "targets": [
+            "CASTELO",
+            "CAVALEIRO",
+            "FEUDO",
+            "CRUZADA",
+            "REI"
+          ]
+        },
+        {
+          "hint": "EGITO",
+          "targets": [
+            "PIRÂMIDE",
+            "FARAÓ",
+            "NILO",
+            "ESFINGE"
+          ]
+        },
+        {
+          "hint": "NAVEGAÇÃO",
+          "targets": [
+            "CARAVELA",
+            "BÚSSOLA",
+            "DESCOBERTA",
+            "MAPA"
+          ]
+        },
+        {
+          "hint": "GUERRA",
+          "targets": [
+            "TRINCHEIRA",
+            "ALIADOS",
+            "BOMBA"
+          ]
+        },
+        {
+          "hint": "FRANÇA",
+          "targets": [
+            "GUILHOTINA",
+            "BASTILHA"
+          ]
+        },
+        {
+          "hint": "PEDRA",
+          "targets": [
+            "PRÉ-HISTÓRIA"
+          ]
+        },
+        {
+          "hint": "ESCRAVOS",
+          "targets": [
+            "ABOLIÇÃO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "subject": "Biologia",
+      "words": [
+        "NÚCLEO",
+        "MITOCÔNDRIA",
+        "RIBOSSOMO",
+        "MEMBRANA",
+        "CITOPLASMA",
+        "DARWIN",
+        "SELEÇÃO",
+        "FÓSSIL",
+        "MUTAÇÃO",
+        "DNA",
+        "CROMOSSOMO",
+        "GENE",
+        "HERANÇA",
+        "PLANTA",
+        "RAIZ",
+        "FOLHA",
+        "FOTOSSÍNTESE",
+        "ANIMAL",
+        "VERTEBRADO",
+        "MAMÍFERO",
+        "VEIA",
+        "ARTÉRIA",
+        "BIOMA",
+        "HABITAT",
+        "INFECÇÃO"
+      ],
+      "hints": [
+        {
+          "hint": "CÉLULA",
+          "targets": [
+            "NÚCLEO",
+            "MITOCÔNDRIA",
+            "RIBOSSOMO",
+            "MEMBRANA",
+            "CITOPLASMA"
+          ]
+        },
+        {
+          "hint": "EVOLUÇÃO",
+          "targets": [
+            "DARWIN",
+            "SELEÇÃO",
+            "FÓSSIL",
+            "MUTAÇÃO"
+          ]
+        },
+        {
+          "hint": "GENÉTICA",
+          "targets": [
+            "DNA",
+            "CROMOSSOMO",
+            "GENE",
+            "HERANÇA"
+          ]
+        },
+        {
+          "hint": "BOTÂNICA",
+          "targets": [
+            "PLANTA",
+            "RAIZ",
+            "FOLHA",
+            "FOTOSSÍNTESE"
+          ]
+        },
+        {
+          "hint": "ZOOLOGIA",
+          "targets": [
+            "ANIMAL",
+            "VERTEBRADO",
+            "MAMÍFERO"
+          ]
+        },
+        {
+          "hint": "SANGUE",
+          "targets": [
+            "VEIA",
+            "ARTÉRIA"
+          ]
+        },
+        {
+          "hint": "ECOLOGIA",
+          "targets": [
+            "BIOMA",
+            "HABITAT"
+          ]
+        },
+        {
+          "hint": "VÍRUS",
+          "targets": [
+            "INFECÇÃO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "subject": "Matemática",
+      "words": [
+        "TRIÂNGULO",
+        "QUADRADO",
+        "CÍRCULO",
+        "RETA",
+        "ÂNGULO",
+        "EQUAÇÃO",
+        "INCÓGNITA",
+        "VARIÁVEL",
+        "FUNÇÃO",
+        "SOMA",
+        "SUBTRAÇÃO",
+        "MULTIPLICAÇÃO",
+        "DIVISÃO",
+        "NUMERADOR",
+        "DENOMINADOR",
+        "PROPORÇÃO",
+        "MÉDIA",
+        "MODA",
+        "MEDIANA",
+        "SENO",
+        "COSSENO",
+        "TANGENTE",
+        "BASE",
+        "EXPOENTE",
+        "TEOREMA"
+      ],
+      "hints": [
+        {
+          "hint": "GEOMETRIA",
+          "targets": [
+            "TRIÂNGULO",
+            "QUADRADO",
+            "CÍRCULO",
+            "RETA",
+            "ÂNGULO"
+          ]
+        },
+        {
+          "hint": "ÁLGEBRA",
+          "targets": [
+            "EQUAÇÃO",
+            "INCÓGNITA",
+            "VARIÁVEL",
+            "FUNÇÃO"
+          ]
+        },
+        {
+          "hint": "ARITMÉTICA",
+          "targets": [
+            "SOMA",
+            "SUBTRAÇÃO",
+            "MULTIPLICAÇÃO",
+            "DIVISÃO"
+          ]
+        },
+        {
+          "hint": "FRAÇÃO",
+          "targets": [
+            "NUMERADOR",
+            "DENOMINADOR",
+            "PROPORÇÃO"
+          ]
+        },
+        {
+          "hint": "ESTATÍSTICA",
+          "targets": [
+            "MÉDIA",
+            "MODA",
+            "MEDIANA"
+          ]
+        },
+        {
+          "hint": "TRIGONOMETRIA",
+          "targets": [
+            "SENO",
+            "COSSENO",
+            "TANGENTE"
+          ]
+        },
+        {
+          "hint": "LOGARITMO",
+          "targets": [
+            "BASE",
+            "EXPOENTE"
+          ]
+        },
+        {
+          "hint": "PITÁGORAS",
+          "targets": [
+            "TEOREMA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "subject": "Filosofia",
+      "words": [
+        "SÓCRATES",
+        "PLATÃO",
+        "ARISTÓTELES",
+        "ATENAS",
+        "ÁGORA",
+        "ÉTICA",
+        "VIRTUDE",
+        "DEVER",
+        "VALOR",
+        "RAZÃO",
+        "LIBERDADE",
+        "IGUALDADE",
+        "CONTRATO",
+        "EPISTEMOLOGIA",
+        "VERDADE",
+        "DÚVIDA",
+        "ANGÚSTIA",
+        "ESCOLHA",
+        "ABSURDO",
+        "CONSCIÊNCIA",
+        "PENSAMENTO",
+        "BEM",
+        "MAL",
+        "BELEZA",
+        "PREMISSA"
+      ],
+      "hints": [
+        {
+          "hint": "GRÉCIA",
+          "targets": [
+            "SÓCRATES",
+            "PLATÃO",
+            "ARISTÓTELES",
+            "ATENAS",
+            "ÁGORA"
+          ]
+        },
+        {
+          "hint": "MORAL",
+          "targets": [
+            "ÉTICA",
+            "VIRTUDE",
+            "DEVER",
+            "VALOR"
+          ]
+        },
+        {
+          "hint": "ILUMINISMO",
+          "targets": [
+            "RAZÃO",
+            "LIBERDADE",
+            "IGUALDADE",
+            "CONTRATO"
+          ]
+        },
+        {
+          "hint": "CONHECIMENTO",
+          "targets": [
+            "EPISTEMOLOGIA",
+            "VERDADE",
+            "DÚVIDA"
+          ]
+        },
+        {
+          "hint": "EXISTENCIALISMO",
+          "targets": [
+            "ANGÚSTIA",
+            "ESCOLHA",
+            "ABSURDO"
+          ]
+        },
+        {
+          "hint": "MENTE",
+          "targets": [
+            "CONSCIÊNCIA",
+            "PENSAMENTO"
+          ]
+        },
+        {
+          "hint": "DUALISMO",
+          "targets": [
+            "BEM",
+            "MAL"
+          ]
+        },
+        {
+          "hint": "ESTÉTICA",
+          "targets": [
+            "BELEZA"
+          ]
+        },
+        {
+          "hint": "LÓGICA",
+          "targets": [
+            "PREMISSA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "subject": "Geografia",
+      "words": [
+        "MONTANHA",
+        "PLANALTO",
+        "PLANÍCIE",
+        "VALE",
+        "CORDILHEIRA",
+        "TROPICAL",
+        "ÁRIDO",
+        "TEMPERADO",
+        "POLAR",
+        "RIO",
+        "LAGO",
+        "OCEANO",
+        "BACIA",
+        "PAÍS",
+        "ESTADO",
+        "FRONTEIRA",
+        "NAÇÃO",
+        "ESCALA",
+        "LATITUDE",
+        "LONGITUDE",
+        "POPULAÇÃO",
+        "CENSO",
+        "MIGRAÇÃO",
+        "GLOBO",
+        "NORTE"
+      ],
+      "hints": [
+        {
+          "hint": "RELEVO",
+          "targets": [
+            "MONTANHA",
+            "PLANALTO",
+            "PLANÍCIE",
+            "VALE",
+            "CORDILHEIRA"
+          ]
+        },
+        {
+          "hint": "CLIMA",
+          "targets": [
+            "TROPICAL",
+            "ÁRIDO",
+            "TEMPERADO",
+            "POLAR"
+          ]
+        },
+        {
+          "hint": "HIDROGRAFIA",
+          "targets": [
+            "RIO",
+            "LAGO",
+            "OCEANO",
+            "BACIA"
+          ]
+        },
+        {
+          "hint": "POLÍTICA",
+          "targets": [
+            "PAÍS",
+            "ESTADO",
+            "FRONTEIRA",
+            "NAÇÃO"
+          ]
+        },
+        {
+          "hint": "CARTOGRAFIA",
+          "targets": [
+            "ESCALA",
+            "LATITUDE",
+            "LONGITUDE"
+          ]
+        },
+        {
+          "hint": "DEMOGRAFIA",
+          "targets": [
+            "POPULAÇÃO",
+            "CENSO",
+            "MIGRAÇÃO"
+          ]
+        },
+        {
+          "hint": "TERRA",
+          "targets": [
+            "GLOBO"
+          ]
+        },
+        {
+          "hint": "BÚSSOLA",
+          "targets": [
+            "NORTE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "subject": "Química",
+      "words": [
+        "SOLUÇÃO",
+        "SOLUTO",
+        "SOLVENTE",
+        "CONCENTRAÇÃO",
+        "DILUIÇÃO",
+        "ELEMENTO",
+        "METAL",
+        "GÁS",
+        "AMETAL",
+        "REAGENTE",
+        "PRODUTO",
+        "CATALISADOR",
+        "SÍNTESE",
+        "COVALENTE",
+        "IÔNICA",
+        "METÁLICA",
+        "SÓLIDO",
+        "LÍQUIDO",
+        "VAPOR",
+        "PH",
+        "BASE",
+        "CARBONO",
+        "HIDROCARBONETO",
+        "MOL",
+        "BECKER"
+      ],
+      "hints": [
+        {
+          "hint": "MISTURA",
+          "targets": [
+            "SOLUÇÃO",
+            "SOLUTO",
+            "SOLVENTE",
+            "CONCENTRAÇÃO",
+            "DILUIÇÃO"
+          ]
+        },
+        {
+          "hint": "TABELA",
+          "targets": [
+            "ELEMENTO",
+            "METAL",
+            "GÁS",
+            "AMETAL"
+          ]
+        },
+        {
+          "hint": "REAÇÃO",
+          "targets": [
+            "REAGENTE",
+            "PRODUTO",
+            "CATALISADOR",
+            "SÍNTESE"
+          ]
+        },
+        {
+          "hint": "LIGAÇÃO",
+          "targets": [
+            "COVALENTE",
+            "IÔNICA",
+            "METÁLICA"
+          ]
+        },
+        {
+          "hint": "ESTADO",
+          "targets": [
+            "SÓLIDO",
+            "LÍQUIDO",
+            "VAPOR"
+          ]
+        },
+        {
+          "hint": "ÁCIDO",
+          "targets": [
+            "PH",
+            "BASE"
+          ]
+        },
+        {
+          "hint": "ORGÂNICA",
+          "targets": [
+            "CARBONO",
+            "HIDROCARBONETO"
+          ]
+        },
+        {
+          "hint": "MEDIDA",
+          "targets": [
+            "MOL"
+          ]
+        },
+        {
+          "hint": "EQUIPAMENTO",
+          "targets": [
+            "BECKER"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "subject": "Sociologia",
+      "words": [
+        "BURGUESIA",
+        "PROLETARIADO",
+        "TRABALHO",
+        "ELITE",
+        "POBREZA",
+        "INSTITUIÇÃO",
+        "FAMÍLIA",
+        "ESTADO",
+        "ESCOLA",
+        "COSTUME",
+        "TRADIÇÃO",
+        "CRENÇA",
+        "IDENTIDADE",
+        "CAPITALISMO",
+        "MAIS-VALIA",
+        "REVOLUÇÃO",
+        "SUICÍDIO",
+        "ANOMIA",
+        "COESÃO",
+        "BUROCRACIA",
+        "AÇÃO",
+        "DOMINAÇÃO",
+        "GREVE",
+        "PROTESTO",
+        "FEMINISMO"
+      ],
+      "hints": [
+        {
+          "hint": "CLASSE",
+          "targets": [
+            "BURGUESIA",
+            "PROLETARIADO",
+            "TRABALHO",
+            "ELITE",
+            "POBREZA"
+          ]
+        },
+        {
+          "hint": "ESTRUTURA",
+          "targets": [
+            "INSTITUIÇÃO",
+            "FAMÍLIA",
+            "ESTADO",
+            "ESCOLA"
+          ]
+        },
+        {
+          "hint": "CULTURA",
+          "targets": [
+            "COSTUME",
+            "TRADIÇÃO",
+            "CRENÇA",
+            "IDENTIDADE"
+          ]
+        },
+        {
+          "hint": "MARX",
+          "targets": [
+            "CAPITALISMO",
+            "MAIS-VALIA",
+            "REVOLUÇÃO"
+          ]
+        },
+        {
+          "hint": "DURKHEIM",
+          "targets": [
+            "SUICÍDIO",
+            "ANOMIA",
+            "COESÃO"
+          ]
+        },
+        {
+          "hint": "WEBER",
+          "targets": [
+            "BUROCRACIA",
+            "AÇÃO",
+            "DOMINAÇÃO"
+          ]
+        },
+        {
+          "hint": "CONFLITO",
+          "targets": [
+            "GREVE",
+            "PROTESTO"
+          ]
+        },
+        {
+          "hint": "GÊNERO",
+          "targets": [
+            "FEMINISMO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "subject": "Artes",
+      "words": [
+        "TELA",
+        "PINCEL",
+        "TINTA",
+        "AQUARELA",
+        "CAVALETE",
+        "CÂMERA",
+        "ROTEIRO",
+        "DIRETOR",
+        "PELÍCULA",
+        "MÁRMORE",
+        "ARGILA",
+        "CINZEL",
+        "ESTÁTUA",
+        "PARTITURA",
+        "NOTA",
+        "INSTRUMENTO",
+        "PALCO",
+        "ATOR",
+        "CORTINA",
+        "BALÉ",
+        "COREOGRAFIA",
+        "EXPOSIÇÃO",
+        "GALERIA",
+        "LENTE",
+        "POESIA"
+      ],
+      "hints": [
+        {
+          "hint": "PINTURA",
+          "targets": [
+            "TELA",
+            "PINCEL",
+            "TINTA",
+            "AQUARELA",
+            "CAVALETE"
+          ]
+        },
+        {
+          "hint": "CINEMA",
+          "targets": [
+            "CÂMERA",
+            "ROTEIRO",
+            "DIRETOR",
+            "PELÍCULA"
+          ]
+        },
+        {
+          "hint": "ESCULTURA",
+          "targets": [
+            "MÁRMORE",
+            "ARGILA",
+            "CINZEL",
+            "ESTÁTUA"
+          ]
+        },
+        {
+          "hint": "MÚSICA",
+          "targets": [
+            "PARTITURA",
+            "NOTA",
+            "INSTRUMENTO"
+          ]
+        },
+        {
+          "hint": "TEATRO",
+          "targets": [
+            "PALCO",
+            "ATOR",
+            "CORTINA"
+          ]
+        },
+        {
+          "hint": "DANÇA",
+          "targets": [
+            "BALÉ",
+            "COREOGRAFIA"
+          ]
+        },
+        {
+          "hint": "MUSEU",
+          "targets": [
+            "EXPOSIÇÃO",
+            "GALERIA"
+          ]
+        },
+        {
+          "hint": "FOTOGRAFIA",
+          "targets": [
+            "LENTE"
+          ]
+        },
+        {
+          "hint": "LITERATURA",
+          "targets": [
+            "POESIA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "subject": "Literatura",
+      "words": [
+        "PERSONAGEM",
+        "ENREDO",
+        "CLÍMAX",
+        "DESFECHO",
+        "NARRADOR",
+        "VERSO",
+        "ESTROFE",
+        "RIMA",
+        "MÉTRICA",
+        "ROMANCE",
+        "CONTO",
+        "CRÔNICA",
+        "DRAMA",
+        "METÁFORA",
+        "IRONIA",
+        "HIPÉRBOLE",
+        "CAPÍTULO",
+        "PRÓLOGO",
+        "EPÍLOGO",
+        "ROMANTISMO",
+        "REALISMO",
+        "MODERNISMO",
+        "ESCRITOR",
+        "POETA",
+        "RESENHA"
+      ],
+      "hints": [
+        {
+          "hint": "NARRATIVA",
+          "targets": [
+            "PERSONAGEM",
+            "ENREDO",
+            "CLÍMAX",
+            "DESFECHO",
+            "NARRADOR"
+          ]
+        },
+        {
+          "hint": "POESIA",
+          "targets": [
+            "VERSO",
+            "ESTROFE",
+            "RIMA",
+            "MÉTRICA"
+          ]
+        },
+        {
+          "hint": "GÊNERO",
+          "targets": [
+            "ROMANCE",
+            "CONTO",
+            "CRÔNICA",
+            "DRAMA"
+          ]
+        },
+        {
+          "hint": "FIGURA",
+          "targets": [
+            "METÁFORA",
+            "IRONIA",
+            "HIPÉRBOLE"
+          ]
+        },
+        {
+          "hint": "LIVRO",
+          "targets": [
+            "CAPÍTULO",
+            "PRÓLOGO",
+            "EPÍLOGO"
+          ]
+        },
+        {
+          "hint": "MOVIMENTO",
+          "targets": [
+            "ROMANTISMO",
+            "REALISMO",
+            "MODERNISMO"
+          ]
+        },
+        {
+          "hint": "AUTOR",
+          "targets": [
+            "ESCRITOR",
+            "POETA"
+          ]
+        },
+        {
+          "hint": "CRÍTICA",
+          "targets": [
+            "RESENHA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "subject": "Psicologia",
+      "words": [
+        "FREUD",
+        "INCONSCIENTE",
+        "EGO",
+        "SONHO",
+        "RECALQUE",
+        "MEMÓRIA",
+        "ATENÇÃO",
+        "PERCEPÇÃO",
+        "LINGUAGEM",
+        "MEDO",
+        "ALEGRIA",
+        "TRISTEZA",
+        "RAIVA",
+        "TERAPIA",
+        "PACIENTE",
+        "CONSULTÓRIO",
+        "ESTÍMULO",
+        "RESPOSTA",
+        "HÁBITO",
+        "ANSIEDADE",
+        "DEPRESSÃO",
+        "FOBIA",
+        "INFÂNCIA",
+        "ADOLESCÊNCIA",
+        "NEURÔNIO"
+      ],
+      "hints": [
+        {
+          "hint": "PSICANÁLISE",
+          "targets": [
+            "FREUD",
+            "INCONSCIENTE",
+            "EGO",
+            "SONHO",
+            "RECALQUE"
+          ]
+        },
+        {
+          "hint": "COGNITIVO",
+          "targets": [
+            "MEMÓRIA",
+            "ATENÇÃO",
+            "PERCEPÇÃO",
+            "LINGUAGEM"
+          ]
+        },
+        {
+          "hint": "EMOÇÃO",
+          "targets": [
+            "MEDO",
+            "ALEGRIA",
+            "TRISTEZA",
+            "RAIVA"
+          ]
+        },
+        {
+          "hint": "CLÍNICA",
+          "targets": [
+            "TERAPIA",
+            "PACIENTE",
+            "CONSULTÓRIO"
+          ]
+        },
+        {
+          "hint": "COMPORTAMENTO",
+          "targets": [
+            "ESTÍMULO",
+            "RESPOSTA",
+            "HÁBITO"
+          ]
+        },
+        {
+          "hint": "TRANSTORNO",
+          "targets": [
+            "ANSIEDADE",
+            "DEPRESSÃO",
+            "FOBIA"
+          ]
+        },
+        {
+          "hint": "DESENVOLVIMENTO",
+          "targets": [
+            "INFÂNCIA",
+            "ADOLESCÊNCIA"
+          ]
+        },
+        {
+          "hint": "CÉREBRO",
+          "targets": [
+            "NEURÔNIO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "subject": "Economia",
+      "words": [
+        "OFERTA",
+        "DEMANDA",
+        "PREÇO",
+        "CONCORRÊNCIA",
+        "MONOPÓLIO",
+        "LUCRO",
+        "JUROS",
+        "INVESTIMENTO",
+        "CAPITAL",
+        "MOEDA",
+        "INFLAÇÃO",
+        "CÂMBIO",
+        "SALÁRIO",
+        "IMPOSTO",
+        "TRIBUTO",
+        "SUBSÍDIO",
+        "AÇÃO",
+        "DIVIDENDO",
+        "BOLSA",
+        "EXPORTAÇÃO",
+        "IMPORTAÇÃO",
+        "RECESSÃO",
+        "DESEMPREGO",
+        "CRÉDITO",
+        "CRESCIMENTO"
+      ],
+      "hints": [
+        {
+          "hint": "MERCADO",
+          "targets": [
+            "OFERTA",
+            "DEMANDA",
+            "PREÇO",
+            "CONCORRÊNCIA",
+            "MONOPÓLIO"
+          ]
+        },
+        {
+          "hint": "FINANÇAS",
+          "targets": [
+            "LUCRO",
+            "JUROS",
+            "INVESTIMENTO",
+            "CAPITAL"
+          ]
+        },
+        {
+          "hint": "DINHEIRO",
+          "targets": [
+            "MOEDA",
+            "INFLAÇÃO",
+            "CÂMBIO",
+            "SALÁRIO"
+          ]
+        },
+        {
+          "hint": "ESTADO",
+          "targets": [
+            "IMPOSTO",
+            "TRIBUTO",
+            "SUBSÍDIO"
+          ]
+        },
+        {
+          "hint": "EMPRESA",
+          "targets": [
+            "AÇÃO",
+            "DIVIDENDO",
+            "BOLSA"
+          ]
+        },
+        {
+          "hint": "COMÉRCIO",
+          "targets": [
+            "EXPORTAÇÃO",
+            "IMPORTAÇÃO"
+          ]
+        },
+        {
+          "hint": "CRISE",
+          "targets": [
+            "RECESSÃO",
+            "DESEMPREGO"
+          ]
+        },
+        {
+          "hint": "BANCO",
+          "targets": [
+            "CRÉDITO"
+          ]
+        },
+        {
+          "hint": "PIB",
+          "targets": [
+            "CRESCIMENTO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "subject": "Astronomia",
+      "words": [
+        "SOL",
+        "PLANETA",
+        "ASTEROIDE",
+        "COMETA",
+        "METEORO",
+        "ESTRELA",
+        "NEBULOSA",
+        "BURACO-NEGRO",
+        "CONSTELAÇÃO",
+        "CRATERA",
+        "FASE",
+        "ECLIPSE",
+        "MARÉ",
+        "TELESCÓPIO",
+        "OBSERVATÓRIO",
+        "LENTE",
+        "ÓRBITA",
+        "GRAVIDADE",
+        "VÁCUO",
+        "FOGUETE",
+        "SATÉLITE",
+        "ASTRONAUTA",
+        "LUZ",
+        "ANO",
+        "BIG-BANG"
+      ],
+      "hints": [
+        {
+          "hint": "SISTEMA",
+          "targets": [
+            "SOL",
+            "PLANETA",
+            "ASTEROIDE",
+            "COMETA",
+            "METEORO"
+          ]
+        },
+        {
+          "hint": "GALÁXIA",
+          "targets": [
+            "ESTRELA",
+            "NEBULOSA",
+            "BURACO-NEGRO",
+            "CONSTELAÇÃO"
+          ]
+        },
+        {
+          "hint": "LUA",
+          "targets": [
+            "CRATERA",
+            "FASE",
+            "ECLIPSE",
+            "MARÉ"
+          ]
+        },
+        {
+          "hint": "OBSERVAÇÃO",
+          "targets": [
+            "TELESCÓPIO",
+            "OBSERVATÓRIO",
+            "LENTE"
+          ]
+        },
+        {
+          "hint": "ESPAÇO",
+          "targets": [
+            "ÓRBITA",
+            "GRAVIDADE",
+            "VÁCUO"
+          ]
+        },
+        {
+          "hint": "EXPLORAÇÃO",
+          "targets": [
+            "FOGUETE",
+            "SATÉLITE",
+            "ASTRONAUTA"
+          ]
+        },
+        {
+          "hint": "DISTÂNCIA",
+          "targets": [
+            "LUZ",
+            "ANO"
+          ]
+        },
+        {
+          "hint": "ORIGEM",
+          "targets": [
+            "BIG-BANG"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "subject": "Ciência da Computação",
+      "words": [
+        "PROCESSADOR",
+        "MEMÓRIA",
+        "PLACA",
+        "DISCO",
+        "MONITOR",
+        "SISTEMA",
+        "PROGRAMA",
+        "APLICATIVO",
+        "JOGO",
+        "ALGORITMO",
+        "VARIÁVEL",
+        "FUNÇÃO",
+        "COMPILADOR",
+        "INTERNET",
+        "ROTEADOR",
+        "SERVIDOR",
+        "SENHA",
+        "CRIPTOGRAFIA",
+        "VÍRUS",
+        "BANCO",
+        "TABELA",
+        "REGISTRO",
+        "NUVEM",
+        "NAVEGADOR",
+        "NEURAL"
+      ],
+      "hints": [
+        {
+          "hint": "HARDWARE",
+          "targets": [
+            "PROCESSADOR",
+            "MEMÓRIA",
+            "PLACA",
+            "DISCO",
+            "MONITOR"
+          ]
+        },
+        {
+          "hint": "SOFTWARE",
+          "targets": [
+            "SISTEMA",
+            "PROGRAMA",
+            "APLICATIVO",
+            "JOGO"
+          ]
+        },
+        {
+          "hint": "CÓDIGO",
+          "targets": [
+            "ALGORITMO",
+            "VARIÁVEL",
+            "FUNÇÃO",
+            "COMPILADOR"
+          ]
+        },
+        {
+          "hint": "REDE",
+          "targets": [
+            "INTERNET",
+            "ROTEADOR",
+            "SERVIDOR"
+          ]
+        },
+        {
+          "hint": "SEGURANÇA",
+          "targets": [
+            "SENHA",
+            "CRIPTOGRAFIA",
+            "VÍRUS"
+          ]
+        },
+        {
+          "hint": "DADOS",
+          "targets": [
+            "BANCO",
+            "TABELA",
+            "REGISTRO"
+          ]
+        },
+        {
+          "hint": "WEB",
+          "targets": [
+            "NUVEM",
+            "NAVEGADOR"
+          ]
+        },
+        {
+          "hint": "IA",
+          "targets": [
+            "NEURAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "subject": "Medicina",
+      "words": [
+        "MÉDICO",
+        "ENFERMEIRO",
+        "PACIENTE",
+        "MACA",
+        "EMERGÊNCIA",
+        "EXAME",
+        "SINTOMA",
+        "RAIO-X",
+        "SANGUE",
+        "REMÉDIO",
+        "CIRURGIA",
+        "TERAPIA",
+        "VACINA",
+        "CORAÇÃO",
+        "PULMÃO",
+        "RIM",
+        "FÍGADO",
+        "VÍRUS",
+        "BACTÉRIA",
+        "FEBRE",
+        "OSSO",
+        "MÚSCULO",
+        "ANALGÉSICO",
+        "ANESTESIA",
+        "HIGIENE"
+      ],
+      "hints": [
+        {
+          "hint": "HOSPITAL",
+          "targets": [
+            "MÉDICO",
+            "ENFERMEIRO",
+            "PACIENTE",
+            "MACA",
+            "EMERGÊNCIA"
+          ]
+        },
+        {
+          "hint": "DIAGNÓSTICO",
+          "targets": [
+            "EXAME",
+            "SINTOMA",
+            "RAIO-X",
+            "SANGUE"
+          ]
+        },
+        {
+          "hint": "TRATAMENTO",
+          "targets": [
+            "REMÉDIO",
+            "CIRURGIA",
+            "TERAPIA",
+            "VACINA"
+          ]
+        },
+        {
+          "hint": "ÓRGÃO",
+          "targets": [
+            "CORAÇÃO",
+            "PULMÃO",
+            "RIM",
+            "FÍGADO"
+          ]
+        },
+        {
+          "hint": "INFECÇÃO",
+          "targets": [
+            "VÍRUS",
+            "BACTÉRIA",
+            "FEBRE"
+          ]
+        },
+        {
+          "hint": "ANATOMIA",
+          "targets": [
+            "OSSO",
+            "MÚSCULO"
+          ]
+        },
+        {
+          "hint": "DOR",
+          "targets": [
+            "ANALGÉSICO",
+            "ANESTESIA"
+          ]
+        },
+        {
+          "hint": "PREVENÇÃO",
+          "targets": [
+            "HIGIENE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "subject": "Direito",
+      "words": [
+        "JUIZ",
+        "ADVOGADO",
+        "PROMOTOR",
+        "JÚRI",
+        "TESTEMUNHA",
+        "ROUBO",
+        "HOMICÍDIO",
+        "FRAUDE",
+        "PRISÃO",
+        "LEI",
+        "CONSTITUIÇÃO",
+        "DECRETO",
+        "CÓDIGO",
+        "AÇÃO",
+        "RECURSO",
+        "SENTENÇA",
+        "ASSINATURA",
+        "CLÁUSULA",
+        "DISTRATO",
+        "CIVIL",
+        "PENAL",
+        "PERÍCIA",
+        "ÁLIBI",
+        "SOBERANIA",
+        "DOLO"
+      ],
+      "hints": [
+        {
+          "hint": "TRIBUNAL",
+          "targets": [
+            "JUIZ",
+            "ADVOGADO",
+            "PROMOTOR",
+            "JÚRI",
+            "TESTEMUNHA"
+          ]
+        },
+        {
+          "hint": "CRIME",
+          "targets": [
+            "ROUBO",
+            "HOMICÍDIO",
+            "FRAUDE",
+            "PRISÃO"
+          ]
+        },
+        {
+          "hint": "NORMA",
+          "targets": [
+            "LEI",
+            "CONSTITUIÇÃO",
+            "DECRETO",
+            "CÓDIGO"
+          ]
+        },
+        {
+          "hint": "PROCESSO",
+          "targets": [
+            "AÇÃO",
+            "RECURSO",
+            "SENTENÇA"
+          ]
+        },
+        {
+          "hint": "CONTRATO",
+          "targets": [
+            "ASSINATURA",
+            "CLÁUSULA",
+            "DISTRATO"
+          ]
+        },
+        {
+          "hint": "RAMO",
+          "targets": [
+            "CIVIL",
+            "PENAL"
+          ]
+        },
+        {
+          "hint": "PROVA",
+          "targets": [
+            "PERÍCIA",
+            "ÁLIBI"
+          ]
+        },
+        {
+          "hint": "ESTADO",
+          "targets": [
+            "SOBERANIA"
+          ]
+        },
+        {
+          "hint": "CULPA",
+          "targets": [
+            "DOLO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "subject": "Música",
+      "words": [
+        "MAESTRO",
+        "VIOLINO",
+        "FLAUTA",
+        "VIOLONCELO",
+        "TÍMPANO",
+        "GUITARRA",
+        "BAIXO",
+        "BATERIA",
+        "VOCAL",
+        "NOTA",
+        "ACORDE",
+        "ESCALA",
+        "COMPASSO",
+        "ROCK",
+        "JAZZ",
+        "SAMBA",
+        "CLÁSSICA",
+        "MICROFONE",
+        "AMPLIFICADOR",
+        "CAIXA",
+        "GRAVAÇÃO",
+        "PRODUTOR",
+        "CORAL",
+        "CANTO",
+        "BATIDA"
+      ],
+      "hints": [
+        {
+          "hint": "ORQUESTRA",
+          "targets": [
+            "MAESTRO",
+            "VIOLINO",
+            "FLAUTA",
+            "VIOLONCELO",
+            "TÍMPANO"
+          ]
+        },
+        {
+          "hint": "BANDA",
+          "targets": [
+            "GUITARRA",
+            "BAIXO",
+            "BATERIA",
+            "VOCAL"
+          ]
+        },
+        {
+          "hint": "TEORIA",
+          "targets": [
+            "NOTA",
+            "ACORDE",
+            "ESCALA",
+            "COMPASSO"
+          ]
+        },
+        {
+          "hint": "GÊNERO",
+          "targets": [
+            "ROCK",
+            "JAZZ",
+            "SAMBA",
+            "CLÁSSICA"
+          ]
+        },
+        {
+          "hint": "PALCO",
+          "targets": [
+            "MICROFONE",
+            "AMPLIFICADOR",
+            "CAIXA"
+          ]
+        },
+        {
+          "hint": "ESTÚDIO",
+          "targets": [
+            "GRAVAÇÃO",
+            "PRODUTOR"
+          ]
+        },
+        {
+          "hint": "VOZ",
+          "targets": [
+            "CORAL",
+            "CANTO"
+          ]
+        },
+        {
+          "hint": "RITMO",
+          "targets": [
+            "BATIDA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "subject": "Linguística",
+      "words": [
+        "SUBSTANTIVO",
+        "VERBO",
+        "ADJETIVO",
+        "PRONOME",
+        "ADVÉRBIO",
+        "SOM",
+        "VOGAL",
+        "CONSOANTE",
+        "SÍLABA",
+        "SUJEITO",
+        "PREDICADO",
+        "OBJETO",
+        "ADJUNTO",
+        "SIGNIFICADO",
+        "SINÔNIMO",
+        "ANTÔNIMO",
+        "EMISSOR",
+        "RECEPTOR",
+        "MENSAGEM",
+        "ORTOGRAFIA",
+        "PONTUAÇÃO",
+        "ACENTO",
+        "IDIOMA",
+        "DIALETO",
+        "ORALIDADE"
+      ],
+      "hints": [
+        {
+          "hint": "GRAMÁTICA",
+          "targets": [
+            "SUBSTANTIVO",
+            "VERBO",
+            "ADJETIVO",
+            "PRONOME",
+            "ADVÉRBIO"
+          ]
+        },
+        {
+          "hint": "FONÉTICA",
+          "targets": [
+            "SOM",
+            "VOGAL",
+            "CONSOANTE",
+            "SÍLABA"
+          ]
+        },
+        {
+          "hint": "SINTAXE",
+          "targets": [
+            "SUJEITO",
+            "PREDICADO",
+            "OBJETO",
+            "ADJUNTO"
+          ]
+        },
+        {
+          "hint": "SEMÂNTICA",
+          "targets": [
+            "SIGNIFICADO",
+            "SINÔNIMO",
+            "ANTÔNIMO"
+          ]
+        },
+        {
+          "hint": "COMUNICAÇÃO",
+          "targets": [
+            "EMISSOR",
+            "RECEPTOR",
+            "MENSAGEM"
+          ]
+        },
+        {
+          "hint": "ESCRITA",
+          "targets": [
+            "ORTOGRAFIA",
+            "PONTUAÇÃO",
+            "ACENTO"
+          ]
+        },
+        {
+          "hint": "LÍNGUA",
+          "targets": [
+            "IDIOMA",
+            "DIALETO"
+          ]
+        },
+        {
+          "hint": "FALA",
+          "targets": [
+            "ORALIDADE"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "subject": "Arquitetura",
+      "words": [
+        "TIJOLO",
+        "CIMENTO",
+        "CONCRETO",
+        "AÇO",
+        "MADEIRA",
+        "PLANTA",
+        "DESENHO",
+        "MAQUETE",
+        "ESCALA",
+        "PILAR",
+        "VIGA",
+        "LAJE",
+        "FUNDAÇÃO",
+        "SALA",
+        "QUARTO",
+        "COZINHA",
+        "FACHADA",
+        "TELHADO",
+        "VARANDA",
+        "GÓTICO",
+        "MODERNO",
+        "URBANISMO",
+        "RUA",
+        "JANELA",
+        "ENGENHEIRO"
+      ],
+      "hints": [
+        {
+          "hint": "CONSTRUÇÃO",
+          "targets": [
+            "TIJOLO",
+            "CIMENTO",
+            "CONCRETO",
+            "AÇO",
+            "MADEIRA"
+          ]
+        },
+        {
+          "hint": "PROJETO",
+          "targets": [
+            "PLANTA",
+            "DESENHO",
+            "MAQUETE",
+            "ESCALA"
+          ]
+        },
+        {
+          "hint": "ESTRUTURA",
+          "targets": [
+            "PILAR",
+            "VIGA",
+            "LAJE",
+            "FUNDAÇÃO"
+          ]
+        },
+        {
+          "hint": "ESPAÇO",
+          "targets": [
+            "SALA",
+            "QUARTO",
+            "COZINHA"
+          ]
+        },
+        {
+          "hint": "EXTERIOR",
+          "targets": [
+            "FACHADA",
+            "TELHADO",
+            "VARANDA"
+          ]
+        },
+        {
+          "hint": "ESTILO",
+          "targets": [
+            "GÓTICO",
+            "MODERNO"
+          ]
+        },
+        {
+          "hint": "CIDADE",
+          "targets": [
+            "URBANISMO",
+            "RUA"
+          ]
+        },
+        {
+          "hint": "VIDRO",
+          "targets": [
+            "JANELA"
+          ]
+        },
+        {
+          "hint": "PROFISSIONAL",
+          "targets": [
+            "ENGENHEIRO"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "subject": "Educação Física",
+      "words": [
+        "MÚSCULO",
+        "OSSO",
+        "ARTICULAÇÃO",
+        "TENDÃO",
+        "LIGAMENTO",
+        "BOLA",
+        "GOL",
+        "CAMPO",
+        "TRAVE",
+        "CORRIDA",
+        "SALTO",
+        "ARREMESSO",
+        "PISTA",
+        "FORÇA",
+        "RESISTÊNCIA",
+        "FLEXIBILIDADE",
+        "NATAÇÃO",
+        "MERGULHO",
+        "RAIA",
+        "MEDALHA",
+        "PÓDIO",
+        "APITO",
+        "CARTÃO",
+        "TATAME",
+        "AQUECIMENTO"
+      ],
+      "hints": [
+        {
+          "hint": "CORPO",
+          "targets": [
+            "MÚSCULO",
+            "OSSO",
+            "ARTICULAÇÃO",
+            "TENDÃO",
+            "LIGAMENTO"
+          ]
+        },
+        {
+          "hint": "FUTEBOL",
+          "targets": [
+            "BOLA",
+            "GOL",
+            "CAMPO",
+            "TRAVE"
+          ]
+        },
+        {
+          "hint": "ATLETISMO",
+          "targets": [
+            "CORRIDA",
+            "SALTO",
+            "ARREMESSO",
+            "PISTA"
+          ]
+        },
+        {
+          "hint": "TREINO",
+          "targets": [
+            "FORÇA",
+            "RESISTÊNCIA",
+            "FLEXIBILIDADE"
+          ]
+        },
+        {
+          "hint": "PISCINA",
+          "targets": [
+            "NATAÇÃO",
+            "MERGULHO",
+            "RAIA"
+          ]
+        },
+        {
+          "hint": "OLIMPÍADA",
+          "targets": [
+            "MEDALHA",
+            "PÓDIO"
+          ]
+        },
+        {
+          "hint": "JUIZ",
+          "targets": [
+            "APITO",
+            "CARTÃO"
+          ]
+        },
+        {
+          "hint": "LUTA",
+          "targets": [
+            "TATAME"
+          ]
+        },
+        {
+          "hint": "ALONGAMENTO",
+          "targets": [
+            "AQUECIMENTO"
+          ]
+        }
+      ]
+    }
+  ]
+}

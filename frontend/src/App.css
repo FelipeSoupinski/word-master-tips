@@ -1,0 +1,245 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem 3rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+.game-info {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: 1.2rem;
+}
+
+.game-info .highlight {
+  color: var(--neon-cyan);
+  font-weight: bold;
+  font-family: var(--font-arcade);
+  font-size: 1rem;
+}
+
+.lives-indicator {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.heart {
+  transition: transform 0.3s ease;
+  color: #ff3366;
+}
+
+.heart.dead {
+  filter: grayscale(1);
+  opacity: 0.4;
+  transform: scale(0.8);
+}
+
+.heart.alive {
+  animation: heartPulse 0.3s ease;
+}
+
+@keyframes heartPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.error-message {
+  background: rgba(239, 68, 68, 0.2);
+  border: 1px solid #ef4444;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ef4444;
+}
+
+.error-message button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loading-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.spinner {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Game Horizontal Layout */
+.game-layout {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.game-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.game-sidebar-left {
+  flex: 0 0 280px;
+}
+
+.game-sidebar-right {
+  flex: 0 0 320px;
+  position: relative;
+}
+
+.hint-card {
+  background: rgba(8, 15, 20, 0.85); /* Slightly cooler dark background */
+  border: 1px solid var(--neon-cyan);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(97, 218, 251, 0.15), inset 0 0 10px rgba(97, 218, 251, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hint-card-title {
+  color: var(--neon-cyan);
+  font-family: var(--font-arcade);
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 0;
+  text-shadow: 0 0 5px var(--neon-cyan);
+  border-bottom: 1px solid rgba(97, 218, 251, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.lives-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+.lives-label {
+  font-family: var(--font-body);
+  color: var(--neon-cyan);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.game-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.action-area {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .game-layout {
+    flex-wrap: wrap;
+  }
+  .game-sidebar-right {
+    order: 3;
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .game-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+  .game-sidebar-left {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+.side-card {
+  height: 100%;
+}
+
+.info-card-internal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-divider {
+  width: 100%;
+  border: 0;
+  border-top: 1px dashed rgba(97, 218, 251, 0.3);
+  margin: 0;
+}
+
+.objective-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-label {
+  font-size: 0.75rem;
+  color: rgba(97, 218, 251, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.info-value {
+  font-size: 1.1rem;
+  font-family: var(--font-arcade);
+  color: #fff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-top: 0.4rem;
+}
+
+.game-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 92vw;
+}

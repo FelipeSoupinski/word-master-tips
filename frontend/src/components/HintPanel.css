@@ -1,0 +1,57 @@
+.hint-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.5rem;
+  background: radial-gradient(circle at center, rgba(97, 218, 251, 0.15), transparent);
+  border-radius: 12px;
+  position: relative;
+}
+
+.hint-label {
+  font-size: 0.85rem;
+  color: rgba(97, 218, 251, 0.8);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.hint-word {
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: var(--font-arcade);
+  margin: 0.5rem 0;
+  text-align: center;
+  word-wrap: normal;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 4px #fff,
+    0 0 10px var(--neon-cyan),
+    0 0 20px var(--neon-cyan),
+    0 0 40px var(--neon-cyan);
+  animation: flicker-cyan 4s infinite alternate;
+}
+
+@keyframes flicker-cyan {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 4px #fff,
+      0 0 10px var(--neon-cyan),
+      0 0 20px var(--neon-cyan),
+      0 0 40px var(--neon-cyan);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+  }
+}
+
+.hint-targets {
+  font-size: 1.1rem;
+  color: #ddd;
+}
+.hint-targets strong {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
+  font-size: 1.3rem;
+}

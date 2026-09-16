@@ -1,0 +1,32 @@
+.intro-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+  z-index: 1000;
+  animation: introSequence 1.8s ease-in-out forwards;
+}
+
+.intro-title {
+  font-size: 5rem; /* Override neon-text size for the intro */
+  animation: introText 1.8s ease-in-out forwards, flicker 1.5s infinite alternate;
+}
+
+@keyframes introSequence {
+  0% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+@keyframes introText {
+  0% { transform: scale(0.8); opacity: 0; }
+  20% { transform: scale(1.1); opacity: 1; }
+  30% { transform: scale(1); opacity: 1; }
+  80% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.5); opacity: 0; }
+}
