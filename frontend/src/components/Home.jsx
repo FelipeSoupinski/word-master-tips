@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar, faArrowLeft, faGamepad } from '@fortawesome/free-solid-svg-icons';
+import { faStar, faArrowLeft, faGamepad, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
 import { getAllProgress, getAllAttempts } from '../services/progressStorage';
 import './Home.css';
@@ -40,23 +40,28 @@ export default function Home() {
                   className="level-btn" 
                   onClick={() => navigate(`/campaign/${parsedCampaignId}/level/${level.id}/play`)}
                 >
-                  <div className="level-name">{level.name}</div>
+                  <div className="level-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+                    <div className="level-name" style={{ marginBottom: 0 }}>{level.name}</div>
+                    <FontAwesomeIcon icon={faPlay} style={{ color: 'var(--neon-cyan)', opacity: 0.8, fontSize: '1.2rem' }} />
+                  </div>
                   
-                  <div className="level-stats" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '10px' }}>
-                    {attemptsCount > 0 && (
+                  <div className="level-stats" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '15px', width: '100%', minHeight: '20px' }}>
+                    {attemptsCount > 0 ? (
                       <div className="level-attempts" style={{ fontSize: '0.8rem', color: '#aaa', display: 'flex', alignItems: 'center', gap: '4px' }}>
                         <FontAwesomeIcon icon={faGamepad} /> {attemptsCount}
                       </div>
+                    ) : (
+                      <div></div>
                     )}
-                    {attemptsCount === 0 && (
-                      <div className="level-attempts"></div>
-                    )}
-                    {stars > 0 && (
-                      <div className="level-stars">
+                    
+                    {stars > 0 ? (
+                      <div className="level-stars" style={{ display: 'flex', gap: '4px' }}>
                         {Array.from({ length: stars }).map((_, i) => (
-                          <FontAwesomeIcon key={i} icon={faStar} style={{ color: '#FFD700', marginLeft: '2px' }} />
+                          <FontAwesomeIcon key={i} icon={faStar} style={{ color: '#FFD700', fontSize: '0.9rem' }} />
                         ))}
                       </div>
+                    ) : (
+                      <div></div>
                     )}
                   </div>
                 </button>

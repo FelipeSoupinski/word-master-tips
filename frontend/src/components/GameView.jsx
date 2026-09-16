@@ -8,10 +8,12 @@ import HintPanel from './HintPanel';
 import Toast from './Toast';
 import IntroBanner from './IntroBanner';
 import GameLog from './GameLog';
+import Mascot from './Mascot';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faArrowLeft, faStar, faBolt, faGamepad } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
 import { getAllProgress, getAttempts } from '../services/progressStorage';
+import { getSarcasticFeedback } from '../utils/sarcasmEngine';
 
 export default function GameView() {
   const { campaignId, levelId } = useParams();
@@ -34,6 +36,12 @@ export default function GameView() {
   const [feedbackMessage, setFeedbackMessage] = useState(null);
   
   const [selectedWord, setSelectedWord] = useState(null);
+  
+  // Mascot states
+  const [streakCount, setStreakCount] = useState(0);
+  const [streakType, setStreakType] = useState('hit');
+  const [mascotState, setMascotState] = useState({ animationState: 'idle', message: null });
+  const mascotTimeoutRef = useRef(null);
   
   // Intro animation state
   const [showIntro, setShowIntro] = useState(true);
@@ -108,18 +116,32 @@ export default function GameView() {
       const response = processor.guessWord(guessedWord);
       const { correct, recoveredLife, lives: newLives } = response;
 
+      let newStreakCount = 1;
+      let newStreakType = correct ? 'hit' : 'miss';
+      
+      if (streakType === newStreakType) {
+        newStreakCount = streakCount + 1;
+      }
+      
+      setStreakType(newStreakType);
+      setStreakCount(newStreakCount);
+      
+      const mascotMsg = getSarcasticFeedback(newStreakType, newStreakCount);
+      const mascotAnim = correct ? 'slow_clap' : (streakCount >= 2 ? 'facepalm' : 'laugh');
+      
+      if (mascotTimeoutRef.current) clearTimeout(mascotTimeoutRef.current);
+      setMascotState({ animationState: mascotAnim, message: mascotMsg });
+      
+      mascotTimeoutRef.current = setTimeout(() => {
+        setMascotState({ animationState: 'idle', message: null });
+      }, 4000);
+
       if (correct) {
-        if (recoveredLife) {
-          setFeedbackMessage({ type: 'correct', text: '5 acertos, vida Recuperada! ❤️' });
-        } else {
-          setFeedbackMessage({ type: 'correct', text: 'Acertou! ✓' });
-        }
         addLog('correct', `Você acertou: ${guessedWord}`);
         if (recoveredLife) {
           addLog('correct', '❤️ 5 acertos, vida recuperada! ❤️');
         }
       } else {
-        setFeedbackMessage({ type: 'wrong', text: `Errou! -1 vida (${newLives} restante${newLives !== 1 ? 's' : ''})` });
         addLog('wrong', `Erro ao chutar: ${guessedWord}`);
       }
 
@@ -176,7 +198,7 @@ export default function GameView() {
 
       {showIntro && <IntroBanner />}
       
-      {feedbackMessage && <Toast message={feedbackMessage.text} type={feedbackMessage.type} />}
+      <Mascot animationState={mascotState.animationState} message={mascotState.message} />
 
       {gameState === 'finished' && !showIntro && (
         <GameOver 
