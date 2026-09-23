@@ -3,7 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faArrowLeft, faGamepad, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
-import { getAllProgress, getAllAttempts } from '../services/progressStorage';
+import { getAllProgress, getAllAttempts, getAllBestTimes } from '../services/progressStorage';
 import './Home.css';
 
 export default function Home() {
@@ -11,10 +11,12 @@ export default function Home() {
   const navigate = useNavigate();
   const [progress, setProgress] = useState({});
   const [attemptsData, setAttemptsData] = useState({});
+  const [bestTimesData, setBestTimesData] = useState({});
 
   useEffect(() => {
     setProgress(getAllProgress());
     setAttemptsData(getAllAttempts());
+    setBestTimesData(getAllBestTimes());
   }, []);
 
   if (campaignId !== undefined) {
@@ -45,7 +47,7 @@ export default function Home() {
                     <FontAwesomeIcon icon={faPlay} style={{ color: 'var(--neon-cyan)', opacity: 0.8, fontSize: '1.2rem' }} />
                   </div>
                   
-                  <div className="level-stats" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '15px', width: '100%', minHeight: '20px' }}>
+                  <div className="level-stats" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '15px', width: '100%', minHeight: '20px', flexWrap: 'wrap' }}>
                     {attemptsCount > 0 ? (
                       <div className="level-attempts" style={{ fontSize: '0.8rem', color: '#aaa', display: 'flex', alignItems: 'center', gap: '4px' }}>
                         <FontAwesomeIcon icon={faGamepad} /> {attemptsCount}
@@ -64,6 +66,11 @@ export default function Home() {
                       <div></div>
                     )}
                   </div>
+                  {bestTimesData[uniqueLevelId] && (
+                    <div className="best-time-indicator" style={{ display: 'flex', justifyContent: 'center', marginTop: '10px', fontSize: '0.85rem', color: '#ffea00' }}>
+                      Melhor Tempo: {Math.floor(bestTimesData[uniqueLevelId] / 60).toString().padStart(2, '0')}:{(bestTimesData[uniqueLevelId] % 60).toString().padStart(2, '0')}
+                    </div>
+                  )}
                 </button>
               );
             })}

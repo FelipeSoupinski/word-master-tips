@@ -62,3 +62,41 @@ export function incrementAttempt(levelId) {
     console.error('Erro ao salvar tentativas no localStorage:', error);
   }
 }
+
+const BEST_TIMES_KEY = 'dicaDeMestreBestTimes';
+
+export function getBestTime(levelId) {
+  try {
+    const data = localStorage.getItem(BEST_TIMES_KEY);
+    const times = data ? JSON.parse(data) : {};
+    return times[levelId] || null;
+  } catch (error) {
+    console.error('Erro ao ler best times do localStorage:', error);
+    return null;
+  }
+}
+
+export function saveBestTime(levelId, timeInSeconds) {
+  try {
+    const data = localStorage.getItem(BEST_TIMES_KEY);
+    const times = data ? JSON.parse(data) : {};
+    const currentBest = times[levelId];
+
+    if (currentBest === undefined || currentBest === null || timeInSeconds < currentBest) {
+      times[levelId] = timeInSeconds;
+      localStorage.setItem(BEST_TIMES_KEY, JSON.stringify(times));
+    }
+  } catch (error) {
+    console.error('Erro ao salvar best time no localStorage:', error);
+  }
+}
+
+export function getAllBestTimes() {
+  try {
+    const data = localStorage.getItem(BEST_TIMES_KEY);
+    return data ? JSON.parse(data) : {};
+  } catch (error) {
+    console.error('Erro ao ler best times do localStorage:', error);
+    return {};
+  }
+}

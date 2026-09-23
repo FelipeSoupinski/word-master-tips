@@ -12,7 +12,7 @@ import Mascot from './Mascot';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faArrowLeft, faStar, faBolt, faGamepad } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
-import { getAllProgress, getAttempts } from '../services/progressStorage';
+import { getAllProgress, getAttempts, saveBestTime, getBestTime } from '../services/progressStorage';
 import { getSarcasticFeedback } from '../utils/sarcasmEngine';
 
 export default function GameView() {
@@ -50,8 +50,24 @@ export default function GameView() {
   const [logEntries, setLogEntries] = useState([]);
   const lastHintRef = useRef(null);
 
+  // Timer & best time state
+  const [elapsedTime, setElapsedTime] = useState(0);
+  const [bestTime, setBestTime] = useState(null);
+  const timerIntervalRef = useRef(null);
+  const startTimeRef = useRef(null);
+
+  // Skip hint visibility state (only allow skip if guessed at least once this hint)
+  const [initialTargetsForHint, setInitialTargetsForHint] = useState(0);
+
   const addLog = (type, text) => {
     setLogEntries(prev => [...prev, { type, text }]);
+  };
+
+  const formatTime = (totalSeconds) => {
+    if (totalSeconds === null || totalSeconds === undefined) return '--:--';
+    const m = Math.floor(totalSeconds / 60).toString().padStart(2, '0');
+    const s = (totalSeconds % 60).toString().padStart(2, '0');
+    return `${m}:${s}`;
   };
 
   // Initial load
@@ -64,10 +80,13 @@ export default function GameView() {
       const uniqueLevelId = `${campaignId}-${levelId}`;
       setBestScore(allProgress[uniqueLevelId] || 0);
       setAttempts(getAttempts(uniqueLevelId));
+      setBestTime(getBestTime(uniqueLevelId));
+      setElapsedTime(0);
 
       // Stop intro animation after 1.8 seconds
       const timer = setTimeout(() => {
         setShowIntro(false);
+        startTimeRef.current = Date.now();
       }, 1800);
       return () => clearTimeout(timer);
     } catch (err) {
@@ -75,6 +94,29 @@ export default function GameView() {
       setShowIntro(false);
     }
   }, [campaignId, levelId]);
+
+  useEffect(() => {
+    if (!showIntro && gameState !== 'finished') {
+      timerIntervalRef.current = setInterval(() => {
+        if (startTimeRef.current) {
+          setElapsedTime(Math.floor((Date.now() - startTimeRef.current) / 1000));
+        }
+      }, 1000);
+    } else {
+      if (timerIntervalRef.current) {
+        clearInterval(timerIntervalRef.current);
+      }
+    }
+    return () => clearInterval(timerIntervalRef.current);
+  }, [showIntro, gameState]);
+
+  useEffect(() => {
+    if (gameState === 'finished' && result === 'victory') {
+      const uniqueLevelId = `${campaignId}-${levelId}`;
+      saveBestTime(uniqueLevelId, elapsedTime);
+      setBestTime(getBestTime(uniqueLevelId)); // Update local state for GameOver screen
+    }
+  }, [gameState, result, campaignId, levelId, elapsedTime]);
 
   useEffect(() => {
     if (!feedbackMessage) return;
@@ -97,6 +139,7 @@ export default function GameView() {
     if (state.currentHint && state.currentHint !== lastHintRef.current) {
       addLog('master', `Dica: ${state.currentHint} (${state.currentTargets} cartas)`);
       lastHintRef.current = state.currentHint;
+      setInitialTargetsForHint(state.currentTargets);
     }
     
     setCurrentHint(state.currentHint);
@@ -106,6 +149,17 @@ export default function GameView() {
   const handleCardClick = (word) => {
     if (showIntro || gameState !== 'guesser_turn' || guessedWords.includes(word) || correctGuesses.includes(word)) return;
     setSelectedWord(word === selectedWord ? null : word);
+  };
+
+  const handleSkipHint = () => {
+    try {
+      const response = processor.skipHint();
+      addLog('master', `Dica pulada. Ela voltará para o final da fila.`);
+      updateState(response);
+      setSelectedWord(null);
+    } catch (err) {
+      setError(err.message || 'Erro ao pular dica');
+    }
   };
 
   const handleConfirmGuess = () => {
@@ -164,9 +218,12 @@ export default function GameView() {
       const uniqueLevelId = `${campaignId}-${levelId}`;
       setBestScore(allProgress[uniqueLevelId] || 0);
       setAttempts(getAttempts(uniqueLevelId));
+      setBestTime(getBestTime(uniqueLevelId));
+      setElapsedTime(0);
 
       setTimeout(() => {
         setShowIntro(false);
+        startTimeRef.current = Date.now();
       }, 1800);
     } catch (err) {
       setError(err.message || 'Erro ao reiniciar jogo');
@@ -207,6 +264,8 @@ export default function GameView() {
           lives={lives}
           campaignId={campaignId}
           levelId={levelId}
+          elapsedTime={elapsedTime}
+          bestTime={bestTime}
         />
       )}
 
@@ -254,6 +313,10 @@ export default function GameView() {
                         <span style={{ fontSize: '0.75rem', color: '#888' }}>Não jogada</span>
                       )}
                     </span>
+                  </div>
+                  <div className="info-row">
+                    <span className="info-label">Tempo Recorde:</span>
+                    <span className="info-value">{bestTime ? formatTime(bestTime) : '--:--'}</span>
                   </div>
                   <div className="info-row">
                     <span className="info-label">
@@ -321,6 +384,8 @@ export default function GameView() {
               <ActionBar 
                 selectedWord={selectedWord} 
                 onConfirmGuess={handleConfirmGuess} 
+                onSkipHint={handleSkipHint}
+                canSkip={initialTargetsForHint > currentTargets}
                 disabled={false}
               />
             </div>

@@ -79,6 +79,23 @@ class GameProcessor {
       const validTargets = nextHint.targets.filter(w => remainingBoardWords.includes(w));
       
       if (validTargets.length > 0) {
+        // Auto-complete if this is the last hint and it covers all remaining words
+        if (this.matchState.hints.length === 0 && validTargets.length === remainingBoardWords.length) {
+          validTargets.forEach(w => {
+            if (!this.matchState.guessedWords.includes(w)) {
+              this.matchState.guessedWords.push(w);
+              this.matchState.correctGuesses.push(w);
+            }
+          });
+          
+          this.matchState.state = 'finished';
+          this.matchState.result = 'victory';
+          
+          const uniqueLevelId = `${this.matchState.gameId}-${this.matchState.levelId}`;
+          saveLevelProgress(uniqueLevelId, this.matchState.lives);
+          return;
+        }
+
         this.matchState.currentHint = nextHint.hint;
         this.matchState.currentTargets = validTargets.length;
         this.matchState.targetWords = validTargets;
@@ -92,6 +109,25 @@ class GameProcessor {
       this.matchState.state = 'finished';
       this.matchState.result = 'defeat';
     }
+  }
+
+  skipHint() {
+    if (this.matchState.state !== 'guesser_turn') return this.getState();
+
+    // Requeue the hint with the remaining targets that haven't been guessed yet
+    const remainingTargets = this.matchState.targetWords.filter(w => !this.matchState.guessedWords.includes(w));
+    if (remainingTargets.length > 0) {
+      this.matchState.hints.push({
+        hint: this.matchState.currentHint,
+        targets: remainingTargets
+      });
+    }
+
+    // Advance turn to Master
+    this.matchState.state = 'master_turn';
+    this.executeMasterTurn();
+
+    return this.getState();
   }
 
   guessWord(word) {

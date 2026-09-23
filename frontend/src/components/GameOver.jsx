@@ -4,7 +4,7 @@ import { faStar, faSkull, faTrophy } from '@fortawesome/free-solid-svg-icons';
 import { processor } from '../services/gameProcessor';
 import './GameOver.css';
 
-export default function GameOver({ result, onPlayAgain, lives, campaignId, levelId }) {
+export default function GameOver({ result, onPlayAgain, lives, campaignId, levelId, elapsedTime, bestTime }) {
   const isVictory = result === 'victory';
   const navigate = useNavigate();
   
@@ -20,6 +20,13 @@ export default function GameOver({ result, onPlayAgain, lives, campaignId, level
     }
   }
 
+  const formatTime = (totalSeconds) => {
+    if (totalSeconds === null || totalSeconds === undefined) return '--:--';
+    const m = Math.floor(totalSeconds / 60).toString().padStart(2, '0');
+    const s = (totalSeconds % 60).toString().padStart(2, '0');
+    return `${m}:${s}`;
+  };
+
   return (
     <div className="game-over-overlay">
       <div className={`game-over-modal ${isVictory ? 'victory' : 'defeat'}`}>
@@ -31,6 +38,12 @@ export default function GameOver({ result, onPlayAgain, lives, campaignId, level
               </div>
               <h2 className="victory-text">VITÓRIA!</h2>
               <p className="game-over-subtitle">Nível concluído com sucesso!</p>
+              
+              <div className="time-info" style={{ margin: '15px 0', fontSize: '1.2rem', color: '#ffea00' }}>
+                <p>Tempo: {formatTime(elapsedTime)}</p>
+                <p style={{ fontSize: '0.9rem', color: '#ccc' }}>Melhor: {formatTime(bestTime)}</p>
+              </div>
+
               <div className="victory-stars">
                 {Array.from({ length: 3 }).map((_, i) => (
                   <FontAwesomeIcon 
