@@ -1,5 +1,5 @@
 {
-  "gameName": "Temas Especiais",
+  "gameName": "Áreas do conhecimento",
   "levels": [
     {
       "id": 1,
@@ -2968,7 +2968,7 @@
       ],
       "hints": [
         {
-          "hint": "ESCAVAÇÃO",
+          "hint": "FERRAMENTA",
           "targets": [
             "PÁ",
             "PINCEL",
@@ -2995,7 +2995,7 @@
           ]
         },
         {
-          "hint": "VESTÍGIO",
+          "hint": "ESCAVAÇÃO",
           "targets": [
             "ARTEFATO",
             "OSSO",

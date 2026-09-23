@@ -1,0 +1,470 @@
+{
+  "gameName": "Skate",
+  "levels": [
+    {
+      "id": 1,
+      "subject": "Peças e Equipamentos",
+      "words": [
+        "SHAPE",
+        "LIXA",
+        "NOSE",
+        "TAIL",
+        "MARFIM",
+        "TRUCK",
+        "AMORTECEDOR",
+        "TRAVE",
+        "PORCA",
+        "RODA",
+        "ROLAMENTO",
+        "URETANO",
+        "ABEC",
+        "PARAFUSO",
+        "CHAVE",
+        "ALLEN",
+        "CAPACETE",
+        "JOELHEIRA",
+        "COTOVELEIRA",
+        "CERA",
+        "ESPAÇADOR",
+        "ADESIVO",
+        "TÊNIS",
+        "CADARÇO",
+        "PALMILHA"
+      ],
+      "hints": [
+        {
+          "hint": "TÁBUA",
+          "targets": [
+            "SHAPE",
+            "LIXA",
+            "NOSE",
+            "TAIL",
+            "MARFIM"
+          ]
+        },
+        {
+          "hint": "EIXO",
+          "targets": [
+            "TRUCK",
+            "AMORTECEDOR",
+            "TRAVE",
+            "PORCA"
+          ]
+        },
+        {
+          "hint": "GIRO",
+          "targets": [
+            "RODA",
+            "ROLAMENTO",
+            "URETANO",
+            "ABEC"
+          ]
+        },
+        {
+          "hint": "FERRAMENTA",
+          "targets": [
+            "PARAFUSO",
+            "CHAVE",
+            "ALLEN"
+          ]
+        },
+        {
+          "hint": "PROTEÇÃO",
+          "targets": [
+            "CAPACETE",
+            "JOELHEIRA",
+            "COTOVELEIRA"
+          ]
+        },
+        {
+          "hint": "ACESSÓRIO",
+          "targets": [
+            "CERA",
+            "ESPAÇADOR",
+            "ADESIVO"
+          ]
+        },
+        {
+          "hint": "CALÇADO",
+          "targets": [
+            "TÊNIS",
+            "CADARÇO",
+            "PALMILHA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "subject": "Manobras de Street",
+      "words": [
+        "FLIP",
+        "HEELFLIP",
+        "VARIAL",
+        "HARDFLIP",
+        "IMPOSSIBLE",
+        "FIFTY",
+        "SMITH",
+        "FEEBLE",
+        "CROOKED",
+        "BOARDSLIDE",
+        "LIPSLIDE",
+        "TAILSLIDE",
+        "BLUNTSLIDE",
+        "OLLIE",
+        "NOLLIE",
+        "FAKIE",
+        "SWITCH",
+        "MANUAL",
+        "NOSEMANUAL",
+        "WHEELIE",
+        "INDY",
+        "MELON",
+        "MUTE",
+        "POP",
+        "BATIDA"
+      ],
+      "hints": [
+        {
+          "hint": "ROTAÇÃO",
+          "targets": [
+            "FLIP",
+            "HEELFLIP",
+            "VARIAL",
+            "HARDFLIP",
+            "IMPOSSIBLE"
+          ]
+        },
+        {
+          "hint": "DESLIZE",
+          "targets": [
+            "FIFTY",
+            "SMITH",
+            "FEEBLE",
+            "CROOKED"
+          ]
+        },
+        {
+          "hint": "ESCORREGAR",
+          "targets": [
+            "BOARDSLIDE",
+            "LIPSLIDE",
+            "TAILSLIDE",
+            "BLUNTSLIDE"
+          ]
+        },
+        {
+          "hint": "POSTURA",
+          "targets": [
+            "OLLIE",
+            "NOLLIE",
+            "FAKIE",
+            "SWITCH"
+          ]
+        },
+        {
+          "hint": "EQUILÍBRIO",
+          "targets": [
+            "MANUAL",
+            "NOSEMANUAL",
+            "WHEELIE"
+          ]
+        },
+        {
+          "hint": "MÃO",
+          "targets": [
+            "INDY",
+            "MELON",
+            "MUTE"
+          ]
+        },
+        {
+          "hint": "IMPULSO",
+          "targets": [
+            "POP",
+            "BATIDA"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "subject": "Picos e Estruturas",
+      "words": [
+        "CORRIMÃO",
+        "ESCADA",
+        "BORDA",
+        "CAIXOTE",
+        "BANCO",
+        "BOWL",
+        "HALFPIPE",
+        "MINIRAMP",
+        "QUARTER",
+        "TRANSIÇÃO",
+        "COPING",
+        "PLATAFORMA",
+        "VERTICAL",
+        "CIMENTO",
+        "MÁRMORE",
+        "GRANITO",
+        "ASFALTO",
+        "PRAÇA",
+        "LADEIRA",
+        "ESCOLA",
+        "PALCO",
+        "HIP",
+        "PIRÂMIDE",
+        "GAP",
+        "DROP"
+      ],
+      "hints": [
+        {
+          "hint": "RUA",
+          "targets": [
+            "CORRIMÃO",
+            "ESCADA",
+            "BORDA",
+            "CAIXOTE",
+            "BANCO"
+          ]
+        },
+        {
+          "hint": "RAMPA",
+          "targets": [
+            "BOWL",
+            "HALFPIPE",
+            "MINIRAMP",
+            "QUARTER"
+          ]
+        },
+        {
+          "hint": "PISTA",
+          "targets": [
+            "TRANSIÇÃO",
+            "COPING",
+            "PLATAFORMA",
+            "VERTICAL"
+          ]
+        },
+        {
+          "hint": "SUPERFÍCIE",
+          "targets": [
+            "CIMENTO",
+            "MÁRMORE",
+            "GRANITO",
+            "ASFALTO"
+          ]
+        },
+        {
+          "hint": "PICO",
+          "targets": [
+            "PRAÇA",
+            "LADEIRA",
+            "ESCOLA"
+          ]
+        },
+        {
+          "hint": "OBSTÁCULO",
+          "targets": [
+            "PALCO",
+            "HIP",
+            "PIRÂMIDE"
+          ]
+        },
+        {
+          "hint": "QUEDA",
+          "targets": [
+            "GAP",
+            "DROP"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "subject": "Cultura e Vestuário",
+      "words": [
+        "CAMISETA",
+        "CALÇA",
+        "MEIA",
+        "BONÉ",
+        "TOUCA",
+        "VÍDEO",
+        "REVISTA",
+        "FOTO",
+        "PARTE",
+        "PREGO",
+        "POSER",
+        "MARRETA",
+        "CARRINHO",
+        "ARTE",
+        "MÚSICA",
+        "GRAFITE",
+        "PATROCÍNIO",
+        "MARCA",
+        "EQUIPE",
+        "CÂMERA",
+        "LENTE",
+        "FISHEYE",
+        "INICIANTE",
+        "AMADOR",
+        "PROFISSIONAL"
+      ],
+      "hints": [
+        {
+          "hint": "VESTUÁRIO",
+          "targets": [
+            "CAMISETA",
+            "CALÇA",
+            "MEIA",
+            "BONÉ",
+            "TOUCA"
+          ]
+        },
+        {
+          "hint": "MÍDIA",
+          "targets": [
+            "VÍDEO",
+            "REVISTA",
+            "FOTO",
+            "PARTE"
+          ]
+        },
+        {
+          "hint": "GÍRIA",
+          "targets": [
+            "PREGO",
+            "POSER",
+            "MARRETA",
+            "CARRINHO"
+          ]
+        },
+        {
+          "hint": "CULTURA",
+          "targets": [
+            "ARTE",
+            "MÚSICA",
+            "GRAFITE"
+          ]
+        },
+        {
+          "hint": "INDÚSTRIA",
+          "targets": [
+            "PATROCÍNIO",
+            "MARCA",
+            "EQUIPE"
+          ]
+        },
+        {
+          "hint": "FILMAGEM",
+          "targets": [
+            "CÂMERA",
+            "LENTE",
+            "FISHEYE"
+          ]
+        },
+        {
+          "hint": "NÍVEL",
+          "targets": [
+            "INICIANTE",
+            "AMADOR",
+            "PROFISSIONAL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "subject": "Modalidades e Competições",
+      "words": [
+        "STREET",
+        "PARK",
+        "MEGARAMPA",
+        "DOWNHILL",
+        "SLALOM",
+        "JUIZ",
+        "NOTA",
+        "CRITÉRIO",
+        "AVALIAÇÃO",
+        "OLIMPÍADA",
+        "XGAMES",
+        "SLS",
+        "MUNDIAL",
+        "MEDALHA",
+        "TROFÉU",
+        "PÓDIO",
+        "VOLTA",
+        "LINHA",
+        "ROTINA",
+        "ERRO",
+        "QUEDA",
+        "TOMBO",
+        "LONGBOARD",
+        "FREESTYLE",
+        "CRUISER"
+      ],
+      "hints": [
+        {
+          "hint": "VERTENTE",
+          "targets": [
+            "STREET",
+            "PARK",
+            "MEGARAMPA",
+            "DOWNHILL",
+            "SLALOM"
+          ]
+        },
+        {
+          "hint": "JULGAMENTO",
+          "targets": [
+            "JUIZ",
+            "NOTA",
+            "CRITÉRIO",
+            "AVALIAÇÃO"
+          ]
+        },
+        {
+          "hint": "EVENTO",
+          "targets": [
+            "OLIMPÍADA",
+            "XGAMES",
+            "SLS",
+            "MUNDIAL"
+          ]
+        },
+        {
+          "hint": "VITÓRIA",
+          "targets": [
+            "MEDALHA",
+            "TROFÉU",
+            "PÓDIO"
+          ]
+        },
+        {
+          "hint": "EXECUÇÃO",
+          "targets": [
+            "VOLTA",
+            "LINHA",
+            "ROTINA"
+          ]
+        },
+        {
+          "hint": "ACIDENTE",
+          "targets": [
+            "ERRO",
+            "QUEDA",
+            "TOMBO"
+          ]
+        },
+        {
+          "hint": "ALTERNATIVA",
+          "targets": [
+            "LONGBOARD",
+            "FREESTYLE",
+            "CRUISER"
+          ]
+        }
+      ]
+    }
+  ]
+}
